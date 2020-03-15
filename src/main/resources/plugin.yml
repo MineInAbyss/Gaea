@@ -1,0 +1,12 @@
+name: Gaea
+version: @version@
+api-version: '1.15'
+main: org.cultofclang.minecraft.gaea.GaeaPlugin
+depend:
+  - KotlinSpice
+prefix: gaea
+author: LizeLive
+commands:
+  gaea:
+    description: give some debug info
+    usage: /gaea

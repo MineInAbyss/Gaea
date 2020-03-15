@@ -1,0 +1,16 @@
+{
+  "masterWorld": {
+    "world": "master_world"
+  },
+  "baseDecayProbability": 0.5,
+  "decayTimeSecs": 86400,
+  "decayRate": 1,
+  "maxDecayPerTick" : 10,
+  "blocksDecayProbability": {
+    "DIRT": 1,
+    "COBBLESTONE": 1,
+    "GRASS": 1,
+    "WATER": 1,
+    "CHEST": 0
+  }
+}
