@@ -8,6 +8,7 @@
   "decayTimeBlockBreak":3600,
   "decayTimeBlockPlace":86400,
   "maxDecayPerTick": 10,
+  "claimRadius":32,
   "blocksDecayProbability": {
     "DIRT": 1,
     "COBBLESTONE": 1,

@@ -44,9 +44,9 @@ object ChunkListener : Listener , Runnable {
             val chunk = toProcess.poll() ?: return
             if(!chunk.isLoaded)
                 continue
-            Gaea.getTrackedWorld(chunk.world) ?: continue
+
             for (y in 0 until CHUNK_HEIGHT step ZONE_SIZE)
-                if(Zone.get(chunk.getBlock(0, y, 0).location)!!.decay())
+                if(Zone.getweak(chunk.getBlock(0, y, 0).location)?.decay() == true)
                     done+=1
         }
     }

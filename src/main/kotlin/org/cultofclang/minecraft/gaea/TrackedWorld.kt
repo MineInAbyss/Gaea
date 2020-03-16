@@ -13,7 +13,7 @@ class TrackedWorld(val world: World, val master:World, var database: Database) {
     companion object{
         private fun setUpDb(worldName:String): Database{
             val db = Database.connect("jdbc:sqlite:$worldName.db", "org.sqlite.JDBC")
-            db.transactionManager.defaultIsolationLevel = Connection.TRANSACTION_READ_UNCOMMITTED
+            db.transactionManager.defaultIsolationLevel = Connection.TRANSACTION_SERIALIZABLE //TRANSACTION_READ_UNCOMMITTED
 
             transaction(db) {
                 SchemaUtils.createMissingTablesAndColumns(Zones)

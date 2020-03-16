@@ -23,6 +23,26 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
                 .setBits(0,4, y)
                 .setSBits(34, 30, z)
 
+
+        fun getweak(location: Location): Zone? {
+            val x = chunk(location.blockX)
+            val y = chunk(location.blockY)
+            val z = chunk(location.blockZ)
+            val world = Gaea.getTrackedWorld(location.world?: return null)?:return null
+
+            var output: Zone? = null
+
+            transaction(world.database) {
+                output = findById(posIndex(x, y, z))
+            }
+
+            if (output!=null) {
+                output!!.world = world
+                output!!.chunk = location.chunk
+            }
+            return output
+        }
+
         fun get(location: Location): Zone? {
             val x = chunk(location.blockX)
             val y = chunk(location.blockY)
@@ -72,10 +92,11 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
         }
     }
 
-    private fun update(value: Float){
+    private fun update(value: Float, changesToBeMade:Boolean){
         transaction(world.database) {
             balance = value
             timestamp = now()
+            if(!changesToBeMade)
             dirty = false
         }
     }
@@ -94,27 +115,32 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
 
         val shouldRegen =zone.dirty && zone.effectiveBalance < 0
         if(shouldRegen || force){
+
+            var changesToBeMade = false
             val timeMs =   measureNanoTime {
                 val masterChunk = zone.world.master.getChunkAt(chunk.x, chunk.z)
 
                 val decayPower = (1-zone.effectiveBalance / Gaea.settings.timeBetweenDecay).coerceAtLeast(1f)
 
+
                 zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
                     val prob = Gaea.settings.getDecayProbability(client.type)
 
                     val realProb = 1 - (1 - prob).pow(decayPower)
-                    //&& client.type != master.type
-                    if (bool(realProb) ) {
-                        client.setBlockData( master.blockData,false)
+                    if(client.type != master.type) {
+                        changesToBeMade = true
+                        if (bool(realProb)) {
+                            client.setBlockData(master.blockData, false)
 
-                        if(master.type == Material.PLAYER_HEAD)
-                        {
-                            Bukkit.getLogger().info("Found a skull ${client.location}")
+                            if (master.type == Material.PLAYER_HEAD) {
+                                Bukkit.getLogger().info("Found a skull ${client.location}")
+                            }
                         }
                     }
                 }
             }
-            zone.update(0f)
+            //if(!force)
+            zone.update(0f, changesToBeMade)
             Bukkit.getLogger().info("apply decay for zone ${zone.x} ${zone.y} ${zone.z} chunk ${chunk.x} ${chunk.z} in ${timeMs/1.0e6}ms")
             return  true
         }

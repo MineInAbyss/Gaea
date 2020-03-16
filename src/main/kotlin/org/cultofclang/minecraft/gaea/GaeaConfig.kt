@@ -12,7 +12,8 @@ data class GaeaConfig(
         val decayTimeBlockBreak: Float,
         val maxDecayTime: Float,
         val maxDecayPerTick: Int,
-        val timeBetweenDecay: Float
+        val timeBetweenDecay: Float,
+        val claimRadius: Int
 ){
     fun getDecayProbability(mat:Material) = blocksDecayProbability.getOrDefault(mat, baseDecayProbability)
 }
