@@ -10,9 +10,11 @@ import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass
 import org.jetbrains.exposed.dao.id.EntityID
 import org.jetbrains.exposed.sql.transactions.transaction
+import kotlin.math.pow
 import kotlin.system.measureNanoTime
 
 class Zone(id: EntityID<Long>) : LongEntity(id) {
+    val changed: Boolean get()=dirty
     lateinit var chunk: Chunk
     lateinit var world:TrackedWorld
     companion object : LongEntityClass<Zone>(Zones){
@@ -40,8 +42,9 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             return output
         }
     }
-    var  balance by Zones.balance
-    var  timestamp by Zones.timestamp
+    private var balance by Zones.balance
+    private var timestamp by Zones.timestamp
+    private var dirty by Zones.dirty
 
     val y: Int
         get() {
@@ -59,44 +62,63 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             return id.value.sBits(34, 30).toInt()
         }
 
-
+    val effectiveBalance : Float get() = balance - timePassed
 
     val timePassed get() = now() - timestamp
 
-    fun  update(value: Float){
+    fun  set(value: Float){
+        transaction(world.database) {
+            balance = value
+        }
+    }
+
+    private fun update(value: Float){
         transaction(world.database) {
             balance = value
             timestamp = now()
+            dirty = false
         }
     }
-}
 
-fun decay(zone: Zone, force: Boolean = false) {
-    val chunk = zone.chunk
+    fun markDirtyAndSetMinBalance(minEffectiveBal: Float, setDirty: Boolean =true) {
+        transaction(world.database) {
+            balance = (effectiveBalance.coerceAtLeast(minEffectiveBal))+timePassed
+            if(setDirty)
+            dirty = true
+        }
+    }
 
-    val shouldRegen =zone.timePassed - zone.balance > Gaea.settings.decayTimeSecs
-    if(shouldRegen || force){
-        val timeMs =   measureNanoTime {
-            val masterChunk = zone.world.master.getChunkAt(chunk.x, chunk.z)
+    fun decay( force: Boolean = false):Boolean {
+        val zone=this
+        val chunk = zone.chunk
 
+        val shouldRegen =zone.dirty && zone.effectiveBalance < 0
+        if(shouldRegen || force){
+            val timeMs =   measureNanoTime {
+                val masterChunk = zone.world.master.getChunkAt(chunk.x, chunk.z)
 
-            zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
-                val prob = Gaea.settings.getDecayProbability(client.type)
+                val decayPower = (1-zone.effectiveBalance / Gaea.settings.timeBetweenDecay).coerceAtLeast(1f)
 
-                //&& client.type != master.type
-                if (bool(prob) ) {
-                    client.setBlockData( master.blockData,false)
+                zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
+                    val prob = Gaea.settings.getDecayProbability(client.type)
 
-                    if(master.type == Material.PLAYER_HEAD)
-                    {
-                        Bukkit.getLogger().info("Found a skull ${client.location}")
+                    val realProb = 1 - (1 - prob).pow(decayPower)
+                    //&& client.type != master.type
+                    if (bool(realProb) ) {
+                        client.setBlockData( master.blockData,false)
+
+                        if(master.type == Material.PLAYER_HEAD)
+                        {
+                            Bukkit.getLogger().info("Found a skull ${client.location}")
+                        }
                     }
-
-                    //todo add support for signs + heads + banners
                 }
             }
+            zone.update(0f)
+            Bukkit.getLogger().info("apply decay for zone ${zone.x} ${zone.y} ${zone.z} chunk ${chunk.x} ${chunk.z} in ${timeMs/1.0e6}ms")
+            return  true
         }
-        zone.update(0f)
-        Bukkit.getLogger().info("apply decay for zone ${zone.x} ${zone.y} ${zone.z} chunk ${chunk.x} ${chunk.z} in ${timeMs/1.0e6}ms")
+        return false
     }
 }
+

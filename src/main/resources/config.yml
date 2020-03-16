@@ -3,9 +3,11 @@
     "world": "master_world"
   },
   "baseDecayProbability": 0.5,
-  "decayTimeSecs": 86400,
-  "decayRate": 1,
-  "maxDecayPerTick" : 10,
+  "timeBetweenDecay": 86400,
+  "maxDecayTime": 2592000,
+  "decayTimeBlockBreak":3600,
+  "decayTimeBlockPlace":86400,
+  "maxDecayPerTick": 10,
   "blocksDecayProbability": {
     "DIRT": 1,
     "COBBLESTONE": 1,

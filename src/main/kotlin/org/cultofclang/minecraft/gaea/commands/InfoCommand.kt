@@ -5,7 +5,7 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Entity
 import org.cultofclang.minecraft.gaea.Zone
-import org.cultofclang.minecraft.gaea.decay
+import org.cultofclang.utils.durationHuman
 
 object InfoCommand : CommandExecutor{
     /**
@@ -34,15 +34,21 @@ object InfoCommand : CommandExecutor{
 
         val zone = Zone.get(location)?: return false
 
-        sender.sendMessage("The zone ${zone.x}, ${zone.y}, ${zone.z} has ${zone.balance} and is ${zone.timePassed}s")
 
         if(args.size == 2 && args[0] == "set"){
-            zone.update(args[1].toFloat())
+            zone.set(args[1].toFloat())
         }
 
-        if("regen" in bagOfFlags) {
-            decay(zone, true)
+
+        if("d" in bagOfFlags) {
+            zone.decay(false)
         }
+
+        if("r" in bagOfFlags) {
+            zone.decay(true)
+        }
+
+        sender.sendMessage("The zone ${zone.x}, ${zone.y}, ${zone.z} is ${if(zone.changed) "changed" else "unchanged"} safe for ${durationHuman(zone.effectiveBalance)}")
 
         return  true
     }

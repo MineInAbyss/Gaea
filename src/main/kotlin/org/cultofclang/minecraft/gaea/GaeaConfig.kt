@@ -6,11 +6,13 @@ import org.bukkit.Material
 @Serializable
 data class GaeaConfig(
         val baseDecayProbability: Float = 0.5f,
-        val blocksDecayProbability:Map<Material, Float>,
-        val masterWorld:Map<String, String>,
-        val decayTimeSecs:Float,
-        val decayRate:Float,
-        val maxDecayPerTick:Int
+        val blocksDecayProbability: Map<Material, Float>,
+        val masterWorld: Map<String, String>,
+        val decayTimeBlockPlace: Float,
+        val decayTimeBlockBreak: Float,
+        val maxDecayTime: Float,
+        val maxDecayPerTick: Int,
+        val timeBetweenDecay: Float
 ){
     fun getDecayProbability(mat:Material) = blocksDecayProbability.getOrDefault(mat, baseDecayProbability)
 }
