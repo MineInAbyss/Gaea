@@ -18,6 +18,9 @@ jobs:
       run: chmod +x gradlew
     - name: Run Test
       run: gradle test
+      env:
+        USERNAME: ${{ secrets.username }}
+        PASSWORD: ${{ secrets.token }}
     - name: Upload build
       uses: actions/upload-artifact@v1
       with:
