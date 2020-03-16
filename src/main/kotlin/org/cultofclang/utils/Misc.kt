@@ -18,7 +18,7 @@ fun durationHuman(timeSecs:Float):String{
     val d = dur.toDays()
     val h = dur.toHours()
     val m = dur.toMinutes()
-    val s = dur.toSeconds()
+    val s = dur.seconds
 
     if(d>0)
         return "$d days"
