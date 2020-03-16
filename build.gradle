@@ -16,8 +16,8 @@ version = pluginVersion
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-def github_password = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-def github_username = project.findProperty("gpr.key") ?: System.getenv("PASSWORD")
+def github_username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+def github_password = project.findProperty("gpr.key") ?: System.getenv("PASSWORD")
 
 repositories {
     mavenCentral()
