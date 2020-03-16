@@ -16,6 +16,9 @@ version = pluginVersion
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
+def github_password = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+def github_username = project.findProperty("gpr.key") ?: System.getenv("PASSWORD")
+
 repositories {
     mavenCentral()
     jcenter()
@@ -25,8 +28,8 @@ repositories {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/CultOfClang/Minecraft/")
         credentials {
-            username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-            password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+            username = github_username
+            password = github_password
         }
     }
 }
@@ -51,17 +54,46 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/CultOfClang/Minecraft/")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+                username = github_username
+                password = github_password
             }
         }
     }
     publications {
         gpr(MavenPublication) {
-            from(components.java)
+            from components.java
+
+            pom {
+                name = 'Gaea'
+                description = 'World slowly returns to original state.'
+                url = 'https://github.com/CultOfClang/Gaea'
+
+                licenses {
+                    license {
+                        name = 'CC BY-ND 4.0'
+                        url = 'https://creativecommons.org/licenses/by-nd/4.0/'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'lizelive'
+                        name = 'lizelive'
+                        email = 'lize@cultofclang.org'
+                    }
+                }
+                scm {
+                    connection = 'scm:https://github.com/CultOfClang/Gaea.git'
+                    developerConnection = 'scm:git:ssh://git@github.com:CultOfClang/Gaea.git'
+                    url = 'https://github.com/CultOfClang/Gaea'
+                }
+            }
         }
+
+
+
     }
 }
+
 
 //Move into plugins folder
 if (project.hasProperty("plugin_path") && plugin_path) {
@@ -70,6 +102,12 @@ if (project.hasProperty("plugin_path") && plugin_path) {
         into plugin_path
     }
     build.dependsOn copyJar
+}
+
+javadoc {
+    if(JavaVersion.current().isJava9Compatible()) {
+        options.addBooleanOption('html5', true)
+    }
 }
 
 test{
