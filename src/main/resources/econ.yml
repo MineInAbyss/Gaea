@@ -1,0 +1,4201 @@
+values:
+  "IRON_ORE": 12.0
+  "GOLD_ORE": 30.0
+  "COAL_ORE": 30.0
+  "DIAMOND_ORE": 640.0
+  "LAPIS_ORE": 120.0
+  "EMERALD_ORE": 800.0
+  "NETHER_QUARTZ_ORE": 40.0
+  "REDSTONE_ORE": 60.0
+  "OAK_LOG": 8.0
+  "COAL": 30.0
+  "EMERALD": 800.0
+  "DIAMOND": 640.0
+  "IRON_INGOT": 12.0
+  "REDSTONE": 60.0
+  "QUARTZ": 40.0
+  "LAPIS_LAZULI": 120.0
+  "GOLD_INGOT": 30.0
+  "BUCKET": 36.0
+  "BLUE_DYE": 120.0
+  "GOLD_BLOCK": 270.0
+  "OAK_PLANKS": 2.0
+  "GOLDEN_CHESTPLATE": 240.0
+  "DIAMOND_CHESTPLATE": 5120.0
+  "IRON_BOOTS": 48.0
+  "IRON_DOOR": 24.0
+  "LIGHT_WEIGHTED_PRESSURE_PLATE": 60.0
+  "OAK_BOAT": 10.0
+  "MINECART": 60.0
+  "LAPIS_BLOCK": 1080.0
+  "CAULDRON": 84.0
+  "DIAMOND_BLOCK": 5760.0
+  "DIAMOND_BOOTS": 2560.0
+  "DIAMOND_LEGGINGS": 4480.0
+  "COMPASS": 108.0
+  "CLOCK": 180.0
+  "DIAMOND_HELMET": 3200.0
+  "OAK_SLAB": 1.0
+  "QUARTZ_BLOCK": 160.0
+  "OAK_PRESSURE_PLATE": 4.0
+  "SHEARS": 24.0
+  "REDSTONE_BLOCK": 540.0
+  "OAK_BUTTON": 2.0
+  "IRON_CHESTPLATE": 96.0
+  "OAK_DOOR": 4.0
+  "OAK_TRAPDOOR": 6.0
+  "IRON_LEGGINGS": 84.0
+  "OAK_STAIRS": 3.0
+  "GOLDEN_HELMET": 150.0
+  "GOLDEN_BOOTS": 120.0
+  "GOLDEN_LEGGINGS": 210.0
+  "HEAVY_WEIGHTED_PRESSURE_PLATE": 24.0
+  "EMERALD_BLOCK": 7200.0
+  "OAK_WOOD": 10.666666666666666
+  "IRON_BLOCK": 108.0
+  "IRON_HELMET": 60.0
+  "IRON_TRAPDOOR": 48.0
+  "COAL_BLOCK": 270.0
+  "IRON_BARS": 4.5
+  "GOLD_NUGGET": 3.3333333333333335
+  "IRON_NUGGET": 1.3333333333333333
+  "QUARTZ_PILLAR": 160.0
+  "QUARTZ_STAIRS": 160.0
+  "CHISELED_QUARTZ_BLOCK": 160.0
+  "QUARTZ_SLAB": 80.0
+  "SMOOTH_QUARTZ": 160.0
+  "SMOOTH_QUARTZ_STAIRS": 160.0
+  "SMOOTH_QUARTZ_SLAB": 80.0
+  "ANVIL": 372.0
+recipes:
+  - output:
+      first: "LIME_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "LIME_TERRACOTTA": 1
+  - output:
+      first: "WHITE_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "WHITE_TERRACOTTA": 1
+  - output:
+      first: "RED_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "RED_TERRACOTTA": 1
+  - output:
+      first: "COAL"
+      second: 1
+    inputs:
+      "COAL_ORE": 1
+  - output:
+      first: "SMOOTH_RED_SANDSTONE"
+      second: 1
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "GOLD_NUGGET"
+      second: 1
+    inputs:
+      "GOLDEN_PICKAXE": 1
+  - output:
+      first: "BROWN_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "BROWN_TERRACOTTA": 1
+  - output:
+      first: "COOKED_BEEF"
+      second: 1
+    inputs:
+      "BEEF": 1
+  - output:
+      first: "LIGHT_GRAY_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "LIGHT_GRAY_TERRACOTTA": 1
+  - output:
+      first: "POPPED_CHORUS_FRUIT"
+      second: 1
+    inputs:
+      "CHORUS_FRUIT": 1
+  - output:
+      first: "DRIED_KELP"
+      second: 1
+    inputs:
+      "KELP": 1
+  - output:
+      first: "COOKED_MUTTON"
+      second: 1
+    inputs:
+      "MUTTON": 1
+  - output:
+      first: "SMOOTH_STONE"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "MAGENTA_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "MAGENTA_TERRACOTTA": 1
+  - output:
+      first: "STONE"
+      second: 1
+    inputs:
+      "COBBLESTONE": 1
+  - output:
+      first: "EMERALD"
+      second: 1
+    inputs:
+      "EMERALD_ORE": 1
+  - output:
+      first: "DIAMOND"
+      second: 1
+    inputs:
+      "DIAMOND_ORE": 1
+  - output:
+      first: "YELLOW_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "YELLOW_TERRACOTTA": 1
+  - output:
+      first: "BRICK"
+      second: 1
+    inputs:
+      "CLAY_BALL": 1
+  - output:
+      first: "CYAN_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "CYAN_TERRACOTTA": 1
+  - output:
+      first: "BLACK_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "BLACK_TERRACOTTA": 1
+  - output:
+      first: "IRON_INGOT"
+      second: 1
+    inputs:
+      "IRON_ORE": 1
+  - output:
+      first: "NETHER_BRICK"
+      second: 1
+    inputs:
+      "NETHERRACK": 1
+  - output:
+      first: "COOKED_CHICKEN"
+      second: 1
+    inputs:
+      "CHICKEN": 1
+  - output:
+      first: "IRON_NUGGET"
+      second: 1
+    inputs:
+      "IRON_PICKAXE": 1
+  - output:
+      first: "GRAY_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "GRAY_TERRACOTTA": 1
+  - output:
+      first: "ORANGE_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "ORANGE_TERRACOTTA": 1
+  - output:
+      first: "REDSTONE"
+      second: 1
+    inputs:
+      "REDSTONE_ORE": 1
+  - output:
+      first: "QUARTZ"
+      second: 1
+    inputs:
+      "NETHER_QUARTZ_ORE": 1
+  - output:
+      first: "TERRACOTTA"
+      second: 1
+    inputs:
+      "CLAY": 1
+  - output:
+      first: "GLASS"
+      second: 1
+    inputs:
+      "RED_SAND": 1
+  - output:
+      first: "BLUE_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "BLUE_TERRACOTTA": 1
+  - output:
+      first: "LIME_DYE"
+      second: 1
+    inputs:
+      "SEA_PICKLE": 1
+  - output:
+      first: "COOKED_SALMON"
+      second: 1
+    inputs:
+      "SALMON": 1
+  - output:
+      first: "PINK_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "PINK_TERRACOTTA": 1
+  - output:
+      first: "GREEN_DYE"
+      second: 1
+    inputs:
+      "CACTUS": 1
+  - output:
+      first: "BAKED_POTATO"
+      second: 1
+    inputs:
+      "POTATO": 1
+  - output:
+      first: "COOKED_PORKCHOP"
+      second: 1
+    inputs:
+      "PORKCHOP": 1
+  - output:
+      first: "COOKED_COD"
+      second: 1
+    inputs:
+      "COD": 1
+  - output:
+      first: "GREEN_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "GREEN_TERRACOTTA": 1
+  - output:
+      first: "LAPIS_LAZULI"
+      second: 1
+    inputs:
+      "LAPIS_ORE": 1
+  - output:
+      first: "CRACKED_STONE_BRICKS"
+      second: 1
+    inputs:
+      "STONE_BRICKS": 1
+  - output:
+      first: "COOKED_RABBIT"
+      second: 1
+    inputs:
+      "RABBIT": 1
+  - output:
+      first: "PURPLE_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "PURPLE_TERRACOTTA": 1
+  - output:
+      first: "SPONGE"
+      second: 1
+    inputs:
+      "WET_SPONGE": 1
+  - output:
+      first: "LIGHT_BLUE_GLAZED_TERRACOTTA"
+      second: 1
+    inputs:
+      "LIGHT_BLUE_TERRACOTTA": 1
+  - output:
+      first: "GOLD_INGOT"
+      second: 1
+    inputs:
+      "GOLD_ORE": 1
+  - output:
+      first: "SMOOTH_SANDSTONE"
+      second: 1
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "SMOOTH_QUARTZ"
+      second: 1
+    inputs:
+      "QUARTZ_BLOCK": 1
+  - output:
+      first: "CHARCOAL"
+      second: 1
+    inputs:
+      "DARK_OAK_LOG": 1
+  - output:
+      first: "DIAMOND_SHOVEL"
+      second: 1
+    inputs:
+      "IRON_INGOT": 5
+      "STRING": 2
+  - output:
+      first: "POLISHED_ANDESITE"
+      second: 4
+    inputs:
+      "ANDESITE": 4
+  - output:
+      first: "BLACK_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "BLACK_DYE": 1
+  - output:
+      first: "CUT_RED_SANDSTONE_SLAB"
+      second: 6
+    inputs:
+      "CUT_RED_SANDSTONE": 3
+  - output:
+      first: "BUCKET"
+      second: 1
+    inputs:
+      "IRON_INGOT": 3
+  - output:
+      first: "BLUE_DYE"
+      second: 1
+    inputs:
+      "LAPIS_LAZULI": 1
+  - output:
+      first: "PINK_DYE"
+      second: 2
+    inputs:
+      "PEONY": 1
+  - output:
+      first: "NOTE_BLOCK"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 8
+      "REDSTONE": 1
+  - output:
+      first: "MOSSY_COBBLESTONE_STAIRS"
+      second: 4
+    inputs:
+      "MOSSY_COBBLESTONE": 6
+  - output:
+      first: "STRIPPED_JUNGLE_WOOD"
+      second: 3
+    inputs:
+      "STRIPPED_JUNGLE_LOG": 4
+  - output:
+      first: "BLUE_WOOL"
+      second: 1
+    inputs:
+      "BLUE_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "ACACIA_WOOD"
+      second: 3
+    inputs:
+      "ACACIA_LOG": 4
+  - output:
+      first: "STRIPPED_SPRUCE_WOOD"
+      second: 3
+    inputs:
+      "STRIPPED_SPRUCE_LOG": 4
+  - output:
+      first: "LIME_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "LIME_DYE": 1
+  - output:
+      first: "BROWN_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "BROWN_DYE": 1
+  - output:
+      first: "PURPUR_STAIRS"
+      second: 4
+    inputs:
+      "PURPUR_BLOCK": 6
+  - output:
+      first: "PINK_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "PINK_DYE": 1
+  - output:
+      first: "LIGHT_GRAY_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "LIGHT_GRAY_DYE": 1
+  - output:
+      first: "BRICK_STAIRS"
+      second: 4
+    inputs:
+      "BRICKS": 6
+  - output:
+      first: "GRAY_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "GRAY_DYE": 1
+  - output:
+      first: "DARK_OAK_SLAB"
+      second: 6
+    inputs:
+      "DARK_OAK_PLANKS": 3
+  - output:
+      first: "PAPER"
+      second: 3
+    inputs:
+      "SUGAR_CANE": 3
+  - output:
+      first: "CAMPFIRE"
+      second: 1
+    inputs:
+      "STICK": 3
+      "COAL": 1
+      "DARK_OAK_LOG": 3
+  - output:
+      first: "OBSERVER"
+      second: 1
+    inputs:
+      "COBBLESTONE": 6
+      "REDSTONE": 2
+      "QUARTZ": 1
+  - output:
+      first: "QUARTZ_PILLAR"
+      second: 2
+    inputs:
+      "QUARTZ_BLOCK": 2
+  - output:
+      first: "POLISHED_DIORITE_STAIRS"
+      second: 4
+    inputs:
+      "POLISHED_DIORITE": 6
+  - output:
+      first: "WOODEN_HOE"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 2
+      "STICK": 2
+  - output:
+      first: "SPRUCE_BOAT"
+      second: 1
+    inputs:
+      "SPRUCE_PLANKS": 5
+  - output:
+      first: "SLIME_BLOCK"
+      second: 1
+    inputs:
+      "SLIME_BALL": 9
+  - output:
+      first: "GOLD_BLOCK"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 9
+  - output:
+      first: "BIRCH_BOAT"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 5
+  - output:
+      first: "ACACIA_PLANKS"
+      second: 4
+    inputs:
+      "STRIPPED_ACACIA_LOG": 1
+  - output:
+      first: "LEAD"
+      second: 2
+    inputs:
+      "STRING": 4
+      "SLIME_BALL": 1
+  - output:
+      first: "WHITE_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "WHITE_DYE": 1
+  - output:
+      first: "RED_CARPET"
+      second: 3
+    inputs:
+      "RED_WOOL": 2
+  - output:
+      first: "BLUE_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "BLUE_DYE": 1
+  - output:
+      first: "TNT_MINECART"
+      second: 1
+    inputs:
+      "TNT": 1
+      "MINECART": 1
+  - output:
+      first: "GREEN_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "GREEN_DYE": 1
+  - output:
+      first: "ENCHANTING_TABLE"
+      second: 1
+    inputs:
+      "BOOK": 1
+      "DIAMOND": 2
+      "OBSIDIAN": 4
+  - output:
+      first: "SPECTRAL_ARROW"
+      second: 2
+    inputs:
+      "GLOWSTONE_DUST": 4
+      "ARROW": 1
+  - output:
+      first: "LIGHT_GRAY_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "LIGHT_GRAY_STAINED_GLASS": 6
+  - output:
+      first: "LIGHT_GRAY_DYE"
+      second: 3
+    inputs:
+      "BLACK_DYE": 1
+      "WHITE_DYE": 2
+  - output:
+      first: "ORANGE_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "ORANGE_DYE": 1
+  - output:
+      first: "BIRCH_PLANKS"
+      second: 4
+    inputs:
+      "STRIPPED_BIRCH_WOOD": 1
+  - output:
+      first: "CYAN_DYE"
+      second: 2
+    inputs:
+      "BLUE_DYE": 1
+      "GREEN_DYE": 1
+  - output:
+      first: "NETHER_BRICK_SLAB"
+      second: 6
+    inputs:
+      "NETHER_BRICKS": 3
+  - output:
+      first: "SUGAR"
+      second: 1
+    inputs:
+      "SUGAR_CANE": 1
+  - output:
+      first: "PURPLE_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "PURPLE_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "PURPLE_BANNER"
+      second: 1
+    inputs:
+      "PURPLE_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "LIME_CARPET"
+      second: 3
+    inputs:
+      "LIME_WOOL": 2
+  - output:
+      first: "LIGHT_BLUE_DYE"
+      second: 2
+    inputs:
+      "BLUE_DYE": 1
+      "WHITE_DYE": 1
+  - output:
+      first: "BLACK_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "BLACK_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "MAGENTA_DYE"
+      second: 3
+    inputs:
+      "BLUE_DYE": 1
+      "RED_DYE": 1
+      "PINK_DYE": 1
+  - output:
+      first: "GREEN_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "GREEN_DYE": 1
+  - output:
+      first: "GREEN_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "GREEN_STAINED_GLASS": 6
+  - output:
+      first: "DIAMOND"
+      second: 9
+    inputs:
+      "DIAMOND_BLOCK": 1
+  - output:
+      first: "SPRUCE_BUTTON"
+      second: 1
+    inputs:
+      "SPRUCE_PLANKS": 1
+  - output:
+      first: "CUT_SANDSTONE"
+      second: 4
+    inputs:
+      "SANDSTONE": 4
+  - output:
+      first: "QUARTZ_SLAB"
+      second: 6
+    inputs:
+      "CHISELED_QUARTZ_BLOCK": 3
+  - output:
+      first: "BOWL"
+      second: 4
+    inputs:
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "IRON_PICKAXE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 3
+      "STICK": 2
+  - output:
+      first: "STONE_BRICK_WALL"
+      second: 6
+    inputs:
+      "STONE_BRICKS": 6
+  - output:
+      first: "RED_SANDSTONE"
+      second: 1
+    inputs:
+      "RED_SAND": 4
+  - output:
+      first: "PURPLE_DYE"
+      second: 2
+    inputs:
+      "BLUE_DYE": 1
+      "RED_DYE": 1
+  - output:
+      first: "LIGHT_GRAY_DYE"
+      second: 1
+    inputs:
+      "WHITE_TULIP": 1
+  - output:
+      first: "LIGHT_GRAY_DYE"
+      second: 1
+    inputs:
+      "AZURE_BLUET": 1
+  - output:
+      first: "CROSSBOW"
+      second: 1
+    inputs:
+      "STICK": 3
+      "IRON_INGOT": 1
+      "STRING": 2
+      "TRIPWIRE_HOOK": 1
+  - output:
+      first: "JUNGLE_SIGN"
+      second: 3
+    inputs:
+      "JUNGLE_PLANKS": 6
+      "STICK": 1
+  - output:
+      first: "BLACK_BED"
+      second: 1
+    inputs:
+      "BLACK_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "OAK_PLANKS"
+      second: 4
+    inputs:
+      "OAK_LOG": 1
+  - output:
+      first: "SPRUCE_STAIRS"
+      second: 4
+    inputs:
+      "SPRUCE_PLANKS": 6
+  - output:
+      first: "PURPLE_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "PURPLE_DYE": 1
+  - output:
+      first: "LIME_DYE"
+      second: 2
+    inputs:
+      "GREEN_DYE": 1
+      "WHITE_DYE": 1
+  - output:
+      first: "ORANGE_DYE"
+      second: 2
+    inputs:
+      "RED_DYE": 1
+      "YELLOW_DYE": 1
+  - output:
+      first: "ACTIVATOR_RAIL"
+      second: 6
+    inputs:
+      "IRON_INGOT": 6
+      "STICK": 2
+      "REDSTONE_TORCH": 1
+  - output:
+      first: "LIGHT_BLUE_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "LIGHT_BLUE_DYE": 1
+  - output:
+      first: "CYAN_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "CYAN_DYE": 1
+  - output:
+      first: "FLOWER_BANNER_PATTERN"
+      second: 1
+    inputs:
+      "PAPER": 1
+      "OXEYE_DAISY": 1
+  - output:
+      first: "BIRCH_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 2
+  - output:
+      first: "DIORITE_STAIRS"
+      second: 4
+    inputs:
+      "DIORITE": 6
+  - output:
+      first: "MAGENTA_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "MAGENTA_DYE": 1
+  - output:
+      first: "BIRCH_SIGN"
+      second: 3
+    inputs:
+      "BIRCH_PLANKS": 6
+      "STICK": 1
+  - output:
+      first: "FURNACE"
+      second: 1
+    inputs:
+      "COBBLESTONE": 8
+  - output:
+      first: "SMOOTH_QUARTZ_STAIRS"
+      second: 4
+    inputs:
+      "SMOOTH_QUARTZ": 6
+  - output:
+      first: "OAK_SIGN"
+      second: 3
+    inputs:
+      "OAK_PLANKS": 6
+      "STICK": 1
+  - output:
+      first: "LIGHT_GRAY_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "LIGHT_GRAY_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "GOLDEN_CHESTPLATE"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 8
+  - output:
+      first: "DIAMOND_CHESTPLATE"
+      second: 1
+    inputs:
+      "DIAMOND": 8
+  - output:
+      first: "ACACIA_TRAPDOOR"
+      second: 2
+    inputs:
+      "ACACIA_PLANKS": 6
+  - output:
+      first: "RED_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "RED_DYE": 1
+  - output:
+      first: "PRISMARINE_BRICK_STAIRS"
+      second: 4
+    inputs:
+      "PRISMARINE_BRICKS": 6
+  - output:
+      first: "IRON_BOOTS"
+      second: 1
+    inputs:
+      "IRON_INGOT": 4
+  - output:
+      first: "RABBIT_STEW"
+      second: 1
+    inputs:
+      "BAKED_POTATO": 1
+      "COOKED_RABBIT": 1
+      "BOWL": 1
+      "CARROT": 1
+      "RED_MUSHROOM": 1
+  - output:
+      first: "OAK_FENCE"
+      second: 3
+    inputs:
+      "OAK_PLANKS": 4
+      "STICK": 2
+  - output:
+      first: "END_STONE_BRICKS"
+      second: 4
+    inputs:
+      "END_STONE": 4
+  - output:
+      first: "BLUE_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "BLUE_DYE": 1
+  - output:
+      first: "BLUE_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "BLUE_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "LEATHER"
+      second: 1
+    inputs:
+      "RABBIT_HIDE": 4
+  - output:
+      first: "PINK_WOOL"
+      second: 1
+    inputs:
+      "PINK_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "ORANGE_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "ORANGE_DYE": 1
+  - output:
+      first: "BLAZE_POWDER"
+      second: 2
+    inputs:
+      "BLAZE_ROD": 1
+  - output:
+      first: "SMOOTH_SANDSTONE_STAIRS"
+      second: 4
+    inputs:
+      "SMOOTH_SANDSTONE": 6
+  - output:
+      first: "POLISHED_DIORITE_SLAB"
+      second: 6
+    inputs:
+      "POLISHED_DIORITE": 3
+  - output:
+      first: "CHISELED_QUARTZ_BLOCK"
+      second: 1
+    inputs:
+      "QUARTZ_SLAB": 2
+  - output:
+      first: "BLUE_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "BLUE_DYE": 1
+  - output:
+      first: "PINK_BANNER"
+      second: 1
+    inputs:
+      "PINK_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "BLACK_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "BLACK_DYE": 1
+  - output:
+      first: "END_STONE_BRICK_WALL"
+      second: 6
+    inputs:
+      "END_STONE_BRICKS": 6
+  - output:
+      first: "BLUE_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "BLUE_STAINED_GLASS": 6
+  - output:
+      first: "HOPPER_MINECART"
+      second: 1
+    inputs:
+      "HOPPER": 1
+      "MINECART": 1
+  - output:
+      first: "POLISHED_GRANITE"
+      second: 4
+    inputs:
+      "GRANITE": 4
+  - output:
+      first: "WHITE_DYE"
+      second: 1
+    inputs:
+      "LILY_OF_THE_VALLEY": 1
+  - output:
+      first: "PURPLE_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "PURPLE_STAINED_GLASS": 6
+  - output:
+      first: "IRON_DOOR"
+      second: 3
+    inputs:
+      "IRON_INGOT": 6
+  - output:
+      first: "GLASS_BOTTLE"
+      second: 3
+    inputs:
+      "GLASS": 3
+  - output:
+      first: "LIGHT_WEIGHTED_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 2
+  - output:
+      first: "GOLDEN_SHOVEL"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 1
+      "STICK": 2
+  - output:
+      first: "DARK_OAK_FENCE"
+      second: 3
+    inputs:
+      "DARK_OAK_PLANKS": 4
+      "STICK": 2
+  - output:
+      first: "RED_BED"
+      second: 1
+    inputs:
+      "RED_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "JUNGLE_FENCE"
+      second: 3
+    inputs:
+      "JUNGLE_PLANKS": 4
+      "STICK": 2
+  - output:
+      first: "GOLD_INGOT"
+      second: 9
+    inputs:
+      "GOLD_BLOCK": 1
+  - output:
+      first: "CREEPER_BANNER_PATTERN"
+      second: 1
+    inputs:
+      "PAPER": 1
+      "CREEPER_HEAD": 1
+  - output:
+      first: "PUMPKIN_PIE"
+      second: 1
+    inputs:
+      "PUMPKIN": 1
+      "SUGAR": 1
+      "EGG": 1
+  - output:
+      first: "YELLOW_BANNER"
+      second: 1
+    inputs:
+      "YELLOW_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "JUNGLE_BOAT"
+      second: 1
+    inputs:
+      "JUNGLE_PLANKS": 5
+  - output:
+      first: "DIAMOND_HOE"
+      second: 1
+    inputs:
+      "DIAMOND": 2
+      "STICK": 2
+  - output:
+      first: "RED_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "RED_DYE": 1
+  - output:
+      first: "STONE_HOE"
+      second: 1
+    inputs:
+      "COBBLESTONE": 2
+      "STICK": 2
+  - output:
+      first: "DIAMOND_SWORD"
+      second: 1
+    inputs:
+      "DIAMOND": 2
+      "STICK": 1
+  - output:
+      first: "MAGENTA_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "MAGENTA_DYE": 1
+  - output:
+      first: "FERMENTED_SPIDER_EYE"
+      second: 1
+    inputs:
+      "SPIDER_EYE": 1
+      "BROWN_MUSHROOM": 1
+      "SUGAR": 1
+  - output:
+      first: "RAIL"
+      second: 16
+    inputs:
+      "IRON_INGOT": 6
+      "STICK": 1
+  - output:
+      first: "GRAY_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "GRAY_DYE": 1
+  - output:
+      first: "RED_DYE"
+      second: 2
+    inputs:
+      "ROSE_BUSH": 1
+  - output:
+      first: "CHEST"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 8
+  - output:
+      first: "PRISMARINE_SLAB"
+      second: 6
+    inputs:
+      "PRISMARINE": 3
+  - output:
+      first: "PINK_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "PINK_DYE": 1
+  - output:
+      first: "YELLOW_CARPET"
+      second: 3
+    inputs:
+      "YELLOW_WOOL": 2
+  - output:
+      first: "SEA_LANTERN"
+      second: 1
+    inputs:
+      "PRISMARINE_SHARD": 4
+      "PRISMARINE_CRYSTALS": 5
+  - output:
+      first: "SMOOTH_SANDSTONE_SLAB"
+      second: 6
+    inputs:
+      "SMOOTH_SANDSTONE": 3
+  - output:
+      first: "OAK_BOAT"
+      second: 1
+    inputs:
+      "OAK_PLANKS": 5
+  - output:
+      first: "CHEST_MINECART"
+      second: 1
+    inputs:
+      "CHEST": 1
+      "MINECART": 1
+  - output:
+      first: "RED_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "RED_DYE": 1
+  - output:
+      first: "MINECART"
+      second: 1
+    inputs:
+      "IRON_INGOT": 5
+  - output:
+      first: "COARSE_DIRT"
+      second: 4
+    inputs:
+      "DIRT": 2
+      "GRAVEL": 2
+  - output:
+      first: "ACACIA_SIGN"
+      second: 3
+    inputs:
+      "ACACIA_PLANKS": 6
+      "STICK": 1
+  - output:
+      first: "SPRUCE_SLAB"
+      second: 6
+    inputs:
+      "SPRUCE_PLANKS": 3
+  - output:
+      first: "BIRCH_SLAB"
+      second: 6
+    inputs:
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "WHITE_BED"
+      second: 1
+    inputs:
+      "WHITE_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "LIGHT_GRAY_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "LIGHT_GRAY_DYE": 1
+  - output:
+      first: "JUKEBOX"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 8
+      "DIAMOND": 1
+  - output:
+      first: "SANDSTONE_STAIRS"
+      second: 4
+    inputs:
+      "SANDSTONE": 6
+  - output:
+      first: "ENDER_EYE"
+      second: 1
+    inputs:
+      "ENDER_PEARL": 1
+      "BLAZE_POWDER": 1
+  - output:
+      first: "COMPOSTER"
+      second: 1
+    inputs:
+      "JUNGLE_SLAB": 7
+  - output:
+      first: "GRAY_BANNER"
+      second: 1
+    inputs:
+      "GRAY_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "COBBLESTONE_SLAB"
+      second: 6
+    inputs:
+      "COBBLESTONE": 3
+  - output:
+      first: "CYAN_WOOL"
+      second: 1
+    inputs:
+      "CYAN_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "IRON_AXE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 3
+      "STICK": 2
+  - output:
+      first: "HAY_BLOCK"
+      second: 1
+    inputs:
+      "WHEAT": 9
+  - output:
+      first: "SNOW_BLOCK"
+      second: 1
+    inputs:
+      "SNOWBALL": 4
+  - output:
+      first: "SANDSTONE_SLAB"
+      second: 6
+    inputs:
+      "SANDSTONE": 3
+  - output:
+      first: "BLACK_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "BLACK_DYE": 1
+  - output:
+      first: "BROWN_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "BROWN_STAINED_GLASS": 6
+  - output:
+      first: "BROWN_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "BROWN_DYE": 1
+  - output:
+      first: "ANDESITE_WALL"
+      second: 6
+    inputs:
+      "ANDESITE": 6
+  - output:
+      first: "DIAMOND_SHOVEL"
+      second: 1
+    inputs:
+      "DIAMOND": 1
+      "STICK": 2
+  - output:
+      first: "RED_DYE"
+      second: 1
+    inputs:
+      "POPPY": 1
+  - output:
+      first: "MAGENTA_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "MAGENTA_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "PURPLE_CARPET"
+      second: 3
+    inputs:
+      "PURPLE_WOOL": 2
+  - output:
+      first: "LAPIS_BLOCK"
+      second: 1
+    inputs:
+      "LAPIS_LAZULI": 9
+  - output:
+      first: "DARK_PRISMARINE_STAIRS"
+      second: 4
+    inputs:
+      "DARK_PRISMARINE": 6
+  - output:
+      first: "BOOKSHELF"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 6
+      "BOOK": 3
+  - output:
+      first: "PINK_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "PINK_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "CAULDRON"
+      second: 1
+    inputs:
+      "IRON_INGOT": 7
+  - output:
+      first: "PURPLE_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "PURPLE_DYE": 1
+  - output:
+      first: "SPRUCE_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "SPRUCE_PLANKS": 2
+  - output:
+      first: "MAGMA_BLOCK"
+      second: 1
+    inputs:
+      "MAGMA_CREAM": 4
+  - output:
+      first: "MAGMA_CREAM"
+      second: 1
+    inputs:
+      "BLAZE_POWDER": 1
+      "SLIME_BALL": 1
+  - output:
+      first: "GREEN_BED"
+      second: 1
+    inputs:
+      "GREEN_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "SMITHING_TABLE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 2
+      "BIRCH_PLANKS": 4
+  - output:
+      first: "NETHER_BRICK_FENCE"
+      second: 6
+    inputs:
+      "NETHER_BRICKS": 4
+      "NETHER_BRICK": 2
+  - output:
+      first: "END_STONE_BRICK_SLAB"
+      second: 6
+    inputs:
+      "END_STONE_BRICKS": 3
+  - output:
+      first: "CHISELED_RED_SANDSTONE"
+      second: 1
+    inputs:
+      "RED_SANDSTONE_SLAB": 2
+  - output:
+      first: "RED_NETHER_BRICK_WALL"
+      second: 6
+    inputs:
+      "RED_NETHER_BRICKS": 6
+  - output:
+      first: "WOODEN_SHOVEL"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 1
+      "STICK": 2
+  - output:
+      first: "PUMPKIN_SEEDS"
+      second: 4
+    inputs:
+      "PUMPKIN": 1
+  - output:
+      first: "GLOWSTONE"
+      second: 1
+    inputs:
+      "GLOWSTONE_DUST": 4
+  - output:
+      first: "CHISELED_STONE_BRICKS"
+      second: 1
+    inputs:
+      "STONE_BRICK_SLAB": 2
+  - output:
+      first: "BOOK"
+      second: 1
+    inputs:
+      "PAPER": 3
+      "LEATHER": 1
+  - output:
+      first: "LIGHT_BLUE_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "LIGHT_BLUE_DYE": 1
+  - output:
+      first: "BROWN_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "BROWN_DYE": 1
+  - output:
+      first: "YELLOW_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "YELLOW_DYE": 1
+  - output:
+      first: "SPRUCE_TRAPDOOR"
+      second: 2
+    inputs:
+      "SPRUCE_PLANKS": 6
+  - output:
+      first: "LIME_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "LIME_DYE": 1
+  - output:
+      first: "DIORITE_SLAB"
+      second: 6
+    inputs:
+      "DIORITE": 3
+  - output:
+      first: "DIAMOND_BLOCK"
+      second: 1
+    inputs:
+      "DIAMOND": 9
+  - output:
+      first: "PRISMARINE_WALL"
+      second: 6
+    inputs:
+      "PRISMARINE": 6
+  - output:
+      first: "BLUE_BANNER"
+      second: 1
+    inputs:
+      "BLUE_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "GOLDEN_CARROT"
+      second: 1
+    inputs:
+      "GOLD_NUGGET": 8
+      "CARROT": 1
+  - output:
+      first: "BARREL"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 6
+      "JUNGLE_SLAB": 2
+  - output:
+      first: "PACKED_ICE"
+      second: 1
+    inputs:
+      "ICE": 9
+  - output:
+      first: "BROWN_BANNER"
+      second: 1
+    inputs:
+      "BROWN_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "JUNGLE_BUTTON"
+      second: 1
+    inputs:
+      "JUNGLE_PLANKS": 1
+  - output:
+      first: "STONE_AXE"
+      second: 1
+    inputs:
+      "COBBLESTONE": 3
+      "STICK": 2
+  - output:
+      first: "BLUE_DYE"
+      second: 1
+    inputs:
+      "CORNFLOWER": 1
+  - output:
+      first: "LEATHER_LEGGINGS"
+      second: 1
+    inputs:
+      "LEATHER": 7
+  - output:
+      first: "LIME_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "LIME_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "PINK_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "PINK_STAINED_GLASS": 6
+  - output:
+      first: "ARMOR_STAND"
+      second: 1
+    inputs:
+      "STICK": 6
+      "SMOOTH_STONE_SLAB": 1
+  - output:
+      first: "BLACK_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "BLACK_DYE": 1
+  - output:
+      first: "BREWING_STAND"
+      second: 1
+    inputs:
+      "BLAZE_ROD": 1
+      "COBBLESTONE": 3
+  - output:
+      first: "JUNGLE_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "JUNGLE_PLANKS": 2
+  - output:
+      first: "DARK_OAK_STAIRS"
+      second: 4
+    inputs:
+      "DARK_OAK_PLANKS": 6
+  - output:
+      first: "RED_NETHER_BRICK_STAIRS"
+      second: 4
+    inputs:
+      "RED_NETHER_BRICKS": 6
+  - output:
+      first: "LEATHER_BOOTS"
+      second: 1
+    inputs:
+      "LEATHER": 4
+  - output:
+      first: "WHITE_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "WHITE_DYE": 1
+  - output:
+      first: "STICK"
+      second: 4
+    inputs:
+      "BIRCH_PLANKS": 2
+  - output:
+      first: "GRANITE_SLAB"
+      second: 6
+    inputs:
+      "GRANITE": 3
+  - output:
+      first: "DARK_OAK_SIGN"
+      second: 3
+    inputs:
+      "DARK_OAK_PLANKS": 6
+      "STICK": 1
+  - output:
+      first: "ORANGE_BANNER"
+      second: 1
+    inputs:
+      "ORANGE_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "GRAY_BED"
+      second: 1
+    inputs:
+      "GRAY_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "CAKE"
+      second: 1
+    inputs:
+      "MILK_BUCKET": 3
+      "SUGAR": 2
+      "EGG": 1
+      "WHEAT": 3
+  - output:
+      first: "DIAMOND_BOOTS"
+      second: 1
+    inputs:
+      "DIAMOND": 4
+  - output:
+      first: "ANDESITE"
+      second: 2
+    inputs:
+      "DIORITE": 1
+      "COBBLESTONE": 1
+  - output:
+      first: "ORANGE_CARPET"
+      second: 3
+    inputs:
+      "ORANGE_WOOL": 2
+  - output:
+      first: "YELLOW_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "YELLOW_DYE": 1
+  - output:
+      first: "GREEN_WOOL"
+      second: 1
+    inputs:
+      "GREEN_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "WHITE_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "WHITE_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "GRAY_WOOL"
+      second: 1
+    inputs:
+      "GRAY_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "GRAY_CARPET"
+      second: 3
+    inputs:
+      "GRAY_WOOL": 2
+  - output:
+      first: "GRAY_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "GRAY_STAINED_GLASS": 6
+  - output:
+      first: "RED_SANDSTONE_SLAB"
+      second: 6
+    inputs:
+      "RED_SANDSTONE": 3
+  - output:
+      first: "BRICKS"
+      second: 1
+    inputs:
+      "BRICK": 4
+  - output:
+      first: "FURNACE_MINECART"
+      second: 1
+    inputs:
+      "FURNACE": 1
+      "MINECART": 1
+  - output:
+      first: "MOSSY_COBBLESTONE_SLAB"
+      second: 6
+    inputs:
+      "MOSSY_COBBLESTONE": 3
+  - output:
+      first: "RED_SANDSTONE_STAIRS"
+      second: 4
+    inputs:
+      "RED_SANDSTONE": 6
+  - output:
+      first: "REDSTONE_TORCH"
+      second: 1
+    inputs:
+      "REDSTONE": 1
+      "STICK": 1
+  - output:
+      first: "BLACK_DYE"
+      second: 1
+    inputs:
+      "WITHER_ROSE": 1
+  - output:
+      first: "BRICK_SLAB"
+      second: 6
+    inputs:
+      "BRICKS": 3
+  - output:
+      first: "LADDER"
+      second: 3
+    inputs:
+      "STICK": 7
+  - output:
+      first: "SMOOTH_STONE_SLAB"
+      second: 6
+    inputs:
+      "SMOOTH_STONE": 3
+  - output:
+      first: "MELON_SEEDS"
+      second: 1
+    inputs:
+      "MELON_SLICE": 1
+  - output:
+      first: "MAGENTA_DYE"
+      second: 1
+    inputs:
+      "ALLIUM": 1
+  - output:
+      first: "GRANITE"
+      second: 1
+    inputs:
+      "DIORITE": 1
+      "QUARTZ": 1
+  - output:
+      first: "BROWN_DYE"
+      second: 1
+    inputs:
+      "COCOA_BEANS": 1
+  - output:
+      first: "MOSSY_STONE_BRICK_WALL"
+      second: 6
+    inputs:
+      "MOSSY_STONE_BRICKS": 6
+  - output:
+      first: "GOLDEN_PICKAXE"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 3
+      "STICK": 2
+  - output:
+      first: "CLAY"
+      second: 1
+    inputs:
+      "CLAY_BALL": 4
+  - output:
+      first: "CHISELED_SANDSTONE"
+      second: 1
+    inputs:
+      "SANDSTONE_SLAB": 2
+  - output:
+      first: "IRON_INGOT"
+      second: 1
+    inputs:
+      "IRON_NUGGET": 9
+  - output:
+      first: "PURPLE_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "PURPLE_DYE": 1
+  - output:
+      first: "OAK_FENCE_GATE"
+      second: 1
+    inputs:
+      "STICK": 4
+      "OAK_PLANKS": 2
+  - output:
+      first: "GOLDEN_SWORD"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 2
+      "STICK": 1
+  - output:
+      first: "PRISMARINE"
+      second: 1
+    inputs:
+      "PRISMARINE_SHARD": 4
+  - output:
+      first: "ARROW"
+      second: 4
+    inputs:
+      "FLINT": 1
+      "STICK": 1
+      "FEATHER": 1
+  - output:
+      first: "PINK_DYE"
+      second: 1
+    inputs:
+      "PINK_TULIP": 1
+  - output:
+      first: "LECTERN"
+      second: 1
+    inputs:
+      "JUNGLE_SLAB": 4
+      "BOOKSHELF": 1
+  - output:
+      first: "DARK_OAK_BOAT"
+      second: 1
+    inputs:
+      "DARK_OAK_PLANKS": 5
+  - output:
+      first: "SKULL_BANNER_PATTERN"
+      second: 1
+    inputs:
+      "PAPER": 1
+      "WITHER_SKELETON_SKULL": 1
+  - output:
+      first: "DIAMOND_LEGGINGS"
+      second: 1
+    inputs:
+      "DIAMOND": 7
+  - output:
+      first: "GLASS_PANE"
+      second: 16
+    inputs:
+      "GLASS": 6
+  - output:
+      first: "RED_NETHER_BRICKS"
+      second: 1
+    inputs:
+      "NETHER_BRICK": 2
+      "NETHER_WART": 2
+  - output:
+      first: "SMOKER"
+      second: 1
+    inputs:
+      "DARK_OAK_LOG": 4
+      "FURNACE": 1
+  - output:
+      first: "LIGHT_GRAY_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "LIGHT_GRAY_DYE": 1
+  - output:
+      first: "BLUE_ICE"
+      second: 1
+    inputs:
+      "PACKED_ICE": 9
+  - output:
+      first: "LOOM"
+      second: 1
+    inputs:
+      "STRING": 2
+      "BIRCH_PLANKS": 2
+  - output:
+      first: "JUNGLE_SLAB"
+      second: 6
+    inputs:
+      "JUNGLE_PLANKS": 3
+  - output:
+      first: "LIGHT_BLUE_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "LIGHT_BLUE_DYE": 1
+  - output:
+      first: "ITEM_FRAME"
+      second: 1
+    inputs:
+      "STICK": 8
+      "LEATHER": 1
+  - output:
+      first: "GRINDSTONE"
+      second: 1
+    inputs:
+      "STICK": 2
+      "STONE_SLAB": 1
+      "BIRCH_PLANKS": 2
+  - output:
+      first: "JUNGLE_TRAPDOOR"
+      second: 2
+    inputs:
+      "JUNGLE_PLANKS": 6
+  - output:
+      first: "YELLOW_WOOL"
+      second: 1
+    inputs:
+      "YELLOW_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "ORANGE_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "ORANGE_DYE": 1
+  - output:
+      first: "ANDESITE_STAIRS"
+      second: 4
+    inputs:
+      "ANDESITE": 6
+  - output:
+      first: "COMPASS"
+      second: 1
+    inputs:
+      "IRON_INGOT": 4
+      "REDSTONE": 1
+  - output:
+      first: "MAGENTA_CARPET"
+      second: 3
+    inputs:
+      "MAGENTA_WOOL": 2
+  - output:
+      first: "CLOCK"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 4
+      "REDSTONE": 1
+  - output:
+      first: "COAL"
+      second: 9
+    inputs:
+      "COAL_BLOCK": 1
+  - output:
+      first: "DARK_OAK_FENCE_GATE"
+      second: 1
+    inputs:
+      "STICK": 4
+      "DARK_OAK_PLANKS": 2
+  - output:
+      first: "ACACIA_FENCE_GATE"
+      second: 1
+    inputs:
+      "STICK": 4
+      "ACACIA_PLANKS": 2
+  - output:
+      first: "SNOW"
+      second: 6
+    inputs:
+      "SNOW_BLOCK": 3
+  - output:
+      first: "JUNGLE_PLANKS"
+      second: 4
+    inputs:
+      "JUNGLE_WOOD": 1
+  - output:
+      first: "BOW"
+      second: 1
+    inputs:
+      "STICK": 3
+      "STRING": 3
+  - output:
+      first: "LIGHT_BLUE_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "LIGHT_BLUE_DYE": 1
+  - output:
+      first: "IRON_INGOT"
+      second: 9
+    inputs:
+      "IRON_BLOCK": 1
+  - output:
+      first: "IRON_HOE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 2
+      "STICK": 2
+  - output:
+      first: "DIAMOND_HELMET"
+      second: 1
+    inputs:
+      "DIAMOND": 5
+  - output:
+      first: "GLISTERING_MELON_SLICE"
+      second: 1
+    inputs:
+      "GOLD_NUGGET": 8
+      "MELON_SLICE": 1
+  - output:
+      first: "CYAN_BANNER"
+      second: 1
+    inputs:
+      "CYAN_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "ORANGE_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "ORANGE_DYE": 1
+  - output:
+      first: "OAK_SLAB"
+      second: 6
+    inputs:
+      "OAK_PLANKS": 3
+  - output:
+      first: "YELLOW_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "YELLOW_DYE": 1
+  - output:
+      first: "QUARTZ_BLOCK"
+      second: 1
+    inputs:
+      "QUARTZ": 4
+  - output:
+      first: "ACACIA_FENCE"
+      second: 3
+    inputs:
+      "ACACIA_PLANKS": 4
+      "STICK": 2
+  - output:
+      first: "DIORITE"
+      second: 2
+    inputs:
+      "COBBLESTONE": 2
+      "QUARTZ": 2
+  - output:
+      first: "ORANGE_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "ORANGE_STAINED_GLASS": 6
+  - output:
+      first: "HONEYCOMB_BLOCK"
+      second: 1
+    inputs:
+      "HONEYCOMB": 4
+  - output:
+      first: "YELLOW_DYE"
+      second: 2
+    inputs:
+      "SUNFLOWER": 1
+  - output:
+      first: "STONE_SWORD"
+      second: 1
+    inputs:
+      "COBBLESTONE": 2
+      "STICK": 1
+  - output:
+      first: "STONE_BRICK_STAIRS"
+      second: 4
+    inputs:
+      "STONE_BRICKS": 6
+  - output:
+      first: "OAK_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "OAK_PLANKS": 2
+  - output:
+      first: "WHEAT"
+      second: 9
+    inputs:
+      "HAY_BLOCK": 1
+  - output:
+      first: "SHEARS"
+      second: 1
+    inputs:
+      "IRON_INGOT": 2
+  - output:
+      first: "CYAN_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "CYAN_DYE": 1
+  - output:
+      first: "REDSTONE_BLOCK"
+      second: 1
+    inputs:
+      "REDSTONE": 9
+  - output:
+      first: "ORANGE_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "ORANGE_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "GRANITE_WALL"
+      second: 6
+    inputs:
+      "GRANITE": 6
+  - output:
+      first: "BROWN_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "BROWN_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "OAK_BUTTON"
+      second: 1
+    inputs:
+      "OAK_PLANKS": 1
+  - output:
+      first: "BROWN_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "BROWN_DYE": 1
+  - output:
+      first: "LIGHT_BLUE_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "LIGHT_BLUE_STAINED_GLASS": 6
+  - output:
+      first: "LAPIS_LAZULI"
+      second: 9
+    inputs:
+      "LAPIS_BLOCK": 1
+  - output:
+      first: "DARK_OAK_PLANKS"
+      second: 4
+    inputs:
+      "DARK_OAK_LOG": 1
+  - output:
+      first: "GOLDEN_AXE"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 3
+      "STICK": 2
+  - output:
+      first: "WHITE_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "WHITE_STAINED_GLASS": 6
+  - output:
+      first: "COOKIE"
+      second: 8
+    inputs:
+      "WHEAT": 2
+      "COCOA_BEANS": 1
+  - output:
+      first: "LEATHER_HORSE_ARMOR"
+      second: 1
+    inputs:
+      "LEATHER": 7
+  - output:
+      first: "PURPLE_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "PURPLE_DYE": 1
+  - output:
+      first: "DARK_PRISMARINE"
+      second: 1
+    inputs:
+      "PRISMARINE_SHARD": 8
+      "BLACK_DYE": 1
+  - output:
+      first: "WHITE_WOOL"
+      second: 1
+    inputs:
+      "STRING": 4
+  - output:
+      first: "LIGHT_GRAY_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "LIGHT_GRAY_DYE": 1
+  - output:
+      first: "YELLOW_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "YELLOW_DYE": 1
+  - output:
+      first: "PURPLE_BED"
+      second: 1
+    inputs:
+      "PURPLE_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "BIRCH_STAIRS"
+      second: 4
+    inputs:
+      "BIRCH_PLANKS": 6
+  - output:
+      first: "BRICK_WALL"
+      second: 6
+    inputs:
+      "BRICKS": 6
+  - output:
+      first: "STONE_BRICKS"
+      second: 4
+    inputs:
+      "STONE": 4
+  - output:
+      first: "BROWN_WOOL"
+      second: 1
+    inputs:
+      "BROWN_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "IRON_CHESTPLATE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 8
+  - output:
+      first: "RED_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "RED_STAINED_GLASS": 6
+  - output:
+      first: "CARROT_ON_A_STICK"
+      second: 1
+    inputs:
+      "FISHING_ROD": 1
+      "CARROT": 1
+  - output:
+      first: "SPRUCE_DOOR"
+      second: 3
+    inputs:
+      "SPRUCE_PLANKS": 6
+  - output:
+      first: "SMOOTH_QUARTZ_SLAB"
+      second: 6
+    inputs:
+      "SMOOTH_QUARTZ": 3
+  - output:
+      first: "CYAN_BED"
+      second: 1
+    inputs:
+      "CYAN_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "BLUE_CARPET"
+      second: 3
+    inputs:
+      "BLUE_WOOL": 2
+  - output:
+      first: "NETHER_BRICKS"
+      second: 1
+    inputs:
+      "NETHER_BRICK": 4
+  - output:
+      first: "PRISMARINE_BRICKS"
+      second: 1
+    inputs:
+      "PRISMARINE_SHARD": 9
+  - output:
+      first: "PRISMARINE_BRICK_SLAB"
+      second: 6
+    inputs:
+      "PRISMARINE_BRICKS": 3
+  - output:
+      first: "HONEY_BOTTLE"
+      second: 4
+    inputs:
+      "HONEY_BLOCK": 1
+      "GLASS_BOTTLE": 4
+  - output:
+      first: "BLACK_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "BLACK_STAINED_GLASS": 6
+  - output:
+      first: "BLACK_DYE"
+      second: 1
+    inputs:
+      "INK_SAC": 1
+  - output:
+      first: "JUNGLE_DOOR"
+      second: 3
+    inputs:
+      "JUNGLE_PLANKS": 6
+  - output:
+      first: "BROWN_CARPET"
+      second: 3
+    inputs:
+      "BROWN_WOOL": 2
+  - output:
+      first: "PINK_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "PINK_DYE": 1
+  - output:
+      first: "ORANGE_DYE"
+      second: 1
+    inputs:
+      "ORANGE_TULIP": 1
+  - output:
+      first: "BONE_MEAL"
+      second: 3
+    inputs:
+      "BONE": 1
+  - output:
+      first: "BIRCH_FENCE_GATE"
+      second: 1
+    inputs:
+      "STICK": 4
+      "BIRCH_PLANKS": 2
+  - output:
+      first: "WOODEN_SWORD"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 2
+      "STICK": 1
+  - output:
+      first: "FLINT_AND_STEEL"
+      second: 1
+    inputs:
+      "IRON_INGOT": 1
+      "FLINT": 1
+  - output:
+      first: "LIGHT_GRAY_BED"
+      second: 1
+    inputs:
+      "LIGHT_GRAY_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "BIRCH_BUTTON"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 1
+  - output:
+      first: "ORANGE_BED"
+      second: 1
+    inputs:
+      "ORANGE_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "TNT"
+      second: 1
+    inputs:
+      "GUNPOWDER": 5
+      "SAND": 4
+  - output:
+      first: "BEACON"
+      second: 1
+    inputs:
+      "GLASS": 5
+      "NETHER_STAR": 1
+      "OBSIDIAN": 3
+  - output:
+      first: "RED_DYE"
+      second: 1
+    inputs:
+      "BEETROOT": 1
+  - output:
+      first: "RED_DYE"
+      second: 1
+    inputs:
+      "RED_TULIP": 1
+  - output:
+      first: "OAK_DOOR"
+      second: 3
+    inputs:
+      "OAK_PLANKS": 6
+  - output:
+      first: "MUSHROOM_STEW"
+      second: 1
+    inputs:
+      "BROWN_MUSHROOM": 1
+      "RED_MUSHROOM": 1
+      "BOWL": 1
+  - output:
+      first: "OAK_TRAPDOOR"
+      second: 2
+    inputs:
+      "OAK_PLANKS": 6
+  - output:
+      first: "CUT_RED_SANDSTONE"
+      second: 4
+    inputs:
+      "RED_SANDSTONE": 4
+  - output:
+      first: "MOSSY_STONE_BRICK_STAIRS"
+      second: 4
+    inputs:
+      "MOSSY_STONE_BRICKS": 6
+  - output:
+      first: "CYAN_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "CYAN_DYE": 1
+  - output:
+      first: "GRANITE_STAIRS"
+      second: 4
+    inputs:
+      "GRANITE": 6
+  - output:
+      first: "GRAY_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "GRAY_DYE": 1
+  - output:
+      first: "GOLD_INGOT"
+      second: 1
+    inputs:
+      "GOLD_NUGGET": 9
+  - output:
+      first: "STRIPPED_ACACIA_WOOD"
+      second: 3
+    inputs:
+      "STRIPPED_ACACIA_LOG": 4
+  - output:
+      first: "ANVIL"
+      second: 1
+    inputs:
+      "IRON_BLOCK": 3
+      "IRON_INGOT": 4
+  - output:
+      first: "LIGHT_BLUE_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "LIGHT_BLUE_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "BIRCH_DOOR"
+      second: 3
+    inputs:
+      "BIRCH_PLANKS": 6
+  - output:
+      first: "GRAY_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "GRAY_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "ACACIA_STAIRS"
+      second: 4
+    inputs:
+      "ACACIA_PLANKS": 6
+  - output:
+      first: "PINK_CARPET"
+      second: 3
+    inputs:
+      "PINK_WOOL": 2
+  - output:
+      first: "BLACK_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "BLACK_DYE": 1
+  - output:
+      first: "ORANGE_WOOL"
+      second: 1
+    inputs:
+      "ORANGE_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "NETHER_BRICK_WALL"
+      second: 6
+    inputs:
+      "NETHER_BRICKS": 6
+  - output:
+      first: "LIGHT_BLUE_WOOL"
+      second: 1
+    inputs:
+      "LIGHT_BLUE_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "MAGENTA_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "MAGENTA_DYE": 1
+  - output:
+      first: "CYAN_CARPET"
+      second: 3
+    inputs:
+      "CYAN_WOOL": 2
+  - output:
+      first: "DARK_OAK_WOOD"
+      second: 3
+    inputs:
+      "DARK_OAK_LOG": 4
+  - output:
+      first: "RED_SANDSTONE_WALL"
+      second: 6
+    inputs:
+      "RED_SANDSTONE": 6
+  - output:
+      first: "IRON_LEGGINGS"
+      second: 1
+    inputs:
+      "IRON_INGOT": 7
+  - output:
+      first: "GREEN_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "GREEN_DYE": 1
+  - output:
+      first: "END_STONE_BRICK_STAIRS"
+      second: 4
+    inputs:
+      "END_STONE_BRICKS": 6
+  - output:
+      first: "DRIED_KELP_BLOCK"
+      second: 1
+    inputs:
+      "DRIED_KELP": 9
+  - output:
+      first: "FISHING_ROD"
+      second: 1
+    inputs:
+      "STICK": 3
+      "STRING": 2
+  - output:
+      first: "SANDSTONE_WALL"
+      second: 6
+    inputs:
+      "SANDSTONE": 6
+  - output:
+      first: "STONE_STAIRS"
+      second: 4
+    inputs:
+      "STONE": 6
+  - output:
+      first: "CRAFTING_TABLE"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 4
+  - output:
+      first: "PURPUR_BLOCK"
+      second: 4
+    inputs:
+      "POPPED_CHORUS_FRUIT": 4
+  - output:
+      first: "STONE_BRICK_SLAB"
+      second: 6
+    inputs:
+      "STONE_BRICKS": 3
+  - output:
+      first: "IRON_SHOVEL"
+      second: 1
+    inputs:
+      "IRON_INGOT": 1
+      "STICK": 2
+  - output:
+      first: "PAINTING"
+      second: 1
+    inputs:
+      "STICK": 8
+      "WHITE_WOOL": 1
+  - output:
+      first: "GREEN_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "GREEN_DYE": 1
+  - output:
+      first: "RED_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "RED_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "BLACK_BANNER"
+      second: 1
+    inputs:
+      "BLACK_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "REPEATER"
+      second: 1
+    inputs:
+      "REDSTONE_TORCH": 2
+      "REDSTONE": 1
+      "STONE": 3
+  - output:
+      first: "COMPARATOR"
+      second: 1
+    inputs:
+      "REDSTONE_TORCH": 3
+      "QUARTZ": 1
+      "STONE": 3
+  - output:
+      first: "DARK_OAK_TRAPDOOR"
+      second: 2
+    inputs:
+      "DARK_OAK_PLANKS": 6
+  - output:
+      first: "CYAN_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "CYAN_DYE": 1
+  - output:
+      first: "JUNGLE_FENCE_GATE"
+      second: 1
+    inputs:
+      "STICK": 4
+      "JUNGLE_PLANKS": 2
+  - output:
+      first: "GRAY_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "GRAY_DYE": 1
+  - output:
+      first: "YELLOW_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "YELLOW_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "SANDSTONE"
+      second: 1
+    inputs:
+      "SAND": 4
+  - output:
+      first: "STRIPPED_OAK_WOOD"
+      second: 3
+    inputs:
+      "STRIPPED_OAK_LOG": 4
+  - output:
+      first: "SHIELD"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 6
+      "IRON_INGOT": 1
+  - output:
+      first: "BLUE_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "BLUE_DYE": 1
+  - output:
+      first: "STICK"
+      second: 1
+    inputs:
+      "BAMBOO": 2
+  - output:
+      first: "PINK_BED"
+      second: 1
+    inputs:
+      "PINK_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "DETECTOR_RAIL"
+      second: 6
+    inputs:
+      "IRON_INGOT": 6
+      "STONE_PRESSURE_PLATE": 1
+      "REDSTONE": 1
+  - output:
+      first: "MAP"
+      second: 1
+    inputs:
+      "PAPER": 8
+      "COMPASS": 1
+  - output:
+      first: "BROWN_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "BROWN_DYE": 1
+  - output:
+      first: "STONE_BUTTON"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "OAK_STAIRS"
+      second: 4
+    inputs:
+      "OAK_PLANKS": 6
+  - output:
+      first: "LEVER"
+      second: 1
+    inputs:
+      "STICK": 1
+      "COBBLESTONE": 1
+  - output:
+      first: "GREEN_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "GREEN_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "ACACIA_BOAT"
+      second: 1
+    inputs:
+      "ACACIA_PLANKS": 5
+  - output:
+      first: "POLISHED_GRANITE_STAIRS"
+      second: 4
+    inputs:
+      "POLISHED_GRANITE": 6
+  - output:
+      first: "TORCH"
+      second: 4
+    inputs:
+      "COAL": 1
+      "STICK": 1
+  - output:
+      first: "POWERED_RAIL"
+      second: 6
+    inputs:
+      "GOLD_INGOT": 6
+      "STICK": 1
+      "REDSTONE": 1
+  - output:
+      first: "WOODEN_PICKAXE"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 3
+      "STICK": 2
+  - output:
+      first: "POLISHED_ANDESITE_SLAB"
+      second: 6
+    inputs:
+      "POLISHED_ANDESITE": 3
+  - output:
+      first: "BREAD"
+      second: 1
+    inputs:
+      "WHEAT": 3
+  - output:
+      first: "BONE_MEAL"
+      second: 9
+    inputs:
+      "BONE_BLOCK": 1
+  - output:
+      first: "EMERALD"
+      second: 9
+    inputs:
+      "EMERALD_BLOCK": 1
+  - output:
+      first: "REDSTONE"
+      second: 9
+    inputs:
+      "REDSTONE_BLOCK": 1
+  - output:
+      first: "WHITE_DYE"
+      second: 1
+    inputs:
+      "BONE_MEAL": 1
+  - output:
+      first: "STICKY_PISTON"
+      second: 1
+    inputs:
+      "SLIME_BALL": 1
+      "PISTON": 1
+  - output:
+      first: "GOLDEN_HOE"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 2
+      "STICK": 2
+  - output:
+      first: "FIRE_CHARGE"
+      second: 3
+    inputs:
+      "GUNPOWDER": 1
+      "BLAZE_POWDER": 1
+      "COAL": 1
+  - output:
+      first: "POLISHED_GRANITE_SLAB"
+      second: 6
+    inputs:
+      "POLISHED_GRANITE": 3
+  - output:
+      first: "LIGHT_BLUE_DYE"
+      second: 1
+    inputs:
+      "BLUE_ORCHID": 1
+  - output:
+      first: "MOJANG_BANNER_PATTERN"
+      second: 1
+    inputs:
+      "PAPER": 1
+      "ENCHANTED_GOLDEN_APPLE": 1
+  - output:
+      first: "GOLDEN_HELMET"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 5
+  - output:
+      first: "CONDUIT"
+      second: 1
+    inputs:
+      "NAUTILUS_SHELL": 8
+      "HEART_OF_THE_SEA": 1
+  - output:
+      first: "MOSSY_COBBLESTONE"
+      second: 1
+    inputs:
+      "COBBLESTONE": 1
+      "VINE": 1
+  - output:
+      first: "CYAN_CONCRETE_POWDER"
+      second: 8
+    inputs:
+      "CYAN_DYE": 1
+      "SAND": 4
+      "GRAVEL": 4
+  - output:
+      first: "PRISMARINE_STAIRS"
+      second: 4
+    inputs:
+      "PRISMARINE": 6
+  - output:
+      first: "ACACIA_DOOR"
+      second: 3
+    inputs:
+      "ACACIA_PLANKS": 6
+  - output:
+      first: "PINK_DYE"
+      second: 2
+    inputs:
+      "RED_DYE": 1
+      "WHITE_DYE": 1
+  - output:
+      first: "END_ROD"
+      second: 4
+    inputs:
+      "BLAZE_ROD": 1
+      "POPPED_CHORUS_FRUIT": 1
+  - output:
+      first: "BLACK_CARPET"
+      second: 3
+    inputs:
+      "BLACK_WOOL": 2
+  - output:
+      first: "GOLDEN_BOOTS"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 4
+  - output:
+      first: "YELLOW_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "YELLOW_STAINED_GLASS": 6
+  - output:
+      first: "REDSTONE_LAMP"
+      second: 1
+    inputs:
+      "REDSTONE": 4
+      "GLOWSTONE": 1
+  - output:
+      first: "YELLOW_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "YELLOW_DYE": 1
+  - output:
+      first: "DROPPER"
+      second: 1
+    inputs:
+      "COBBLESTONE": 7
+      "REDSTONE": 1
+  - output:
+      first: "STONE_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "STONE": 2
+  - output:
+      first: "LIME_BANNER"
+      second: 1
+    inputs:
+      "LIME_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "BIRCH_TRAPDOOR"
+      second: 2
+    inputs:
+      "BIRCH_PLANKS": 6
+  - output:
+      first: "SMOOTH_RED_SANDSTONE_SLAB"
+      second: 6
+    inputs:
+      "SMOOTH_RED_SANDSTONE": 3
+  - output:
+      first: "CUT_SANDSTONE_SLAB"
+      second: 6
+    inputs:
+      "CUT_SANDSTONE": 3
+  - output:
+      first: "STRIPPED_BIRCH_WOOD"
+      second: 3
+    inputs:
+      "STRIPPED_BIRCH_LOG": 4
+  - output:
+      first: "GOLDEN_LEGGINGS"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 7
+  - output:
+      first: "STONE_SHOVEL"
+      second: 1
+    inputs:
+      "COBBLESTONE": 1
+      "STICK": 2
+  - output:
+      first: "PINK_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "PINK_DYE": 1
+  - output:
+      first: "COBBLESTONE_STAIRS"
+      second: 4
+    inputs:
+      "COBBLESTONE": 6
+  - output:
+      first: "HEAVY_WEIGHTED_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 2
+  - output:
+      first: "PURPUR_PILLAR"
+      second: 1
+    inputs:
+      "PURPUR_SLAB": 2
+  - output:
+      first: "RED_BANNER"
+      second: 1
+    inputs:
+      "RED_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "ORANGE_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "ORANGE_DYE": 1
+  - output:
+      first: "MAGENTA_DYE"
+      second: 2
+    inputs:
+      "PURPLE_DYE": 1
+      "PINK_DYE": 1
+  - output:
+      first: "MOSSY_COBBLESTONE_WALL"
+      second: 6
+    inputs:
+      "MOSSY_COBBLESTONE": 6
+  - output:
+      first: "LIGHT_GRAY_DYE"
+      second: 2
+    inputs:
+      "GRAY_DYE": 1
+      "WHITE_DYE": 1
+  - output:
+      first: "PINK_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "PINK_DYE": 1
+  - output:
+      first: "LIGHT_BLUE_BANNER"
+      second: 1
+    inputs:
+      "LIGHT_BLUE_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "FLETCHING_TABLE"
+      second: 1
+    inputs:
+      "FLINT": 2
+      "BIRCH_PLANKS": 4
+  - output:
+      first: "HONEY_BLOCK"
+      second: 1
+    inputs:
+      "HONEY_BOTTLE": 4
+  - output:
+      first: "DARK_PRISMARINE_SLAB"
+      second: 6
+    inputs:
+      "DARK_PRISMARINE": 3
+  - output:
+      first: "ANDESITE_SLAB"
+      second: 6
+    inputs:
+      "ANDESITE": 3
+  - output:
+      first: "MOSSY_STONE_BRICK_SLAB"
+      second: 6
+    inputs:
+      "MOSSY_STONE_BRICKS": 3
+  - output:
+      first: "SPRUCE_FENCE"
+      second: 3
+    inputs:
+      "SPRUCE_PLANKS": 4
+      "STICK": 2
+  - output:
+      first: "MAGENTA_DYE"
+      second: 4
+    inputs:
+      "BLUE_DYE": 1
+      "RED_DYE": 2
+      "WHITE_DYE": 1
+  - output:
+      first: "GREEN_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "GREEN_DYE": 1
+  - output:
+      first: "TURTLE_HELMET"
+      second: 1
+    inputs:
+      "SCUTE": 5
+  - output:
+      first: "SPRUCE_WOOD"
+      second: 3
+    inputs:
+      "SPRUCE_LOG": 4
+  - output:
+      first: "IRON_SWORD"
+      second: 1
+    inputs:
+      "IRON_INGOT": 2
+      "STICK": 1
+  - output:
+      first: "MAGENTA_BED"
+      second: 1
+    inputs:
+      "MAGENTA_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "LIGHT_BLUE_CARPET"
+      second: 3
+    inputs:
+      "LIGHT_BLUE_WOOL": 2
+  - output:
+      first: "BLUE_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "BLUE_DYE": 1
+  - output:
+      first: "PURPLE_WOOL"
+      second: 1
+    inputs:
+      "PURPLE_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "LIGHT_GRAY_WOOL"
+      second: 1
+    inputs:
+      "LIGHT_GRAY_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "PURPLE_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "PURPLE_DYE": 1
+  - output:
+      first: "NETHER_BRICK_STAIRS"
+      second: 4
+    inputs:
+      "NETHER_BRICKS": 6
+  - output:
+      first: "LIME_WOOL"
+      second: 1
+    inputs:
+      "LIME_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "LIME_CARPET"
+      second: 8
+    inputs:
+      "WHITE_CARPET": 8
+      "LIME_DYE": 1
+  - output:
+      first: "MAGENTA_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "MAGENTA_STAINED_GLASS": 6
+  - output:
+      first: "MAGENTA_DYE"
+      second: 2
+    inputs:
+      "LILAC": 1
+  - output:
+      first: "LIGHT_GRAY_DYE"
+      second: 1
+    inputs:
+      "OXEYE_DAISY": 1
+  - output:
+      first: "LIGHT_BLUE_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "LIGHT_BLUE_DYE": 1
+  - output:
+      first: "ACACIA_BUTTON"
+      second: 1
+    inputs:
+      "ACACIA_PLANKS": 1
+  - output:
+      first: "FLOWER_POT"
+      second: 1
+    inputs:
+      "BRICK": 3
+  - output:
+      first: "DIAMOND_PICKAXE"
+      second: 1
+    inputs:
+      "DIAMOND": 3
+      "STICK": 2
+  - output:
+      first: "GOLDEN_APPLE"
+      second: 1
+    inputs:
+      "GOLD_INGOT": 8
+      "APPLE": 1
+  - output:
+      first: "EMERALD_BLOCK"
+      second: 1
+    inputs:
+      "EMERALD": 9
+  - output:
+      first: "SCAFFOLDING"
+      second: 6
+    inputs:
+      "BAMBOO": 6
+      "STRING": 1
+  - output:
+      first: "OAK_WOOD"
+      second: 3
+    inputs:
+      "OAK_LOG": 4
+  - output:
+      first: "LIGHT_BLUE_BED"
+      second: 1
+    inputs:
+      "LIGHT_BLUE_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "POLISHED_ANDESITE_STAIRS"
+      second: 4
+    inputs:
+      "POLISHED_ANDESITE": 6
+  - output:
+      first: "LEATHER_HELMET"
+      second: 1
+    inputs:
+      "LEATHER": 5
+  - output:
+      first: "BLAST_FURNACE"
+      second: 1
+    inputs:
+      "IRON_INGOT": 5
+      "FURNACE": 1
+      "SMOOTH_STONE": 3
+  - output:
+      first: "JUNGLE_STAIRS"
+      second: 4
+    inputs:
+      "JUNGLE_PLANKS": 6
+  - output:
+      first: "ACACIA_SLAB"
+      second: 6
+    inputs:
+      "ACACIA_PLANKS": 3
+  - output:
+      first: "DARK_OAK_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "DARK_OAK_PLANKS": 2
+  - output:
+      first: "BIRCH_WOOD"
+      second: 3
+    inputs:
+      "BIRCH_LOG": 4
+  - output:
+      first: "WRITABLE_BOOK"
+      second: 1
+    inputs:
+      "BOOK": 1
+      "INK_SAC": 1
+      "FEATHER": 1
+  - output:
+      first: "LIME_BED"
+      second: 1
+    inputs:
+      "LIME_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "DARK_OAK_DOOR"
+      second: 3
+    inputs:
+      "DARK_OAK_PLANKS": 6
+  - output:
+      first: "ACACIA_PRESSURE_PLATE"
+      second: 1
+    inputs:
+      "ACACIA_PLANKS": 2
+  - output:
+      first: "STONE_SLAB"
+      second: 6
+    inputs:
+      "STONE": 3
+  - output:
+      first: "WHITE_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "WHITE_DYE": 1
+  - output:
+      first: "POLISHED_DIORITE"
+      second: 4
+    inputs:
+      "DIORITE": 4
+  - output:
+      first: "SPRUCE_SIGN"
+      second: 3
+    inputs:
+      "SPRUCE_PLANKS": 6
+      "STICK": 1
+  - output:
+      first: "MAP"
+      second: 1
+    inputs:
+      "PAPER": 8
+      "FILLED_MAP": 1
+  - output:
+      first: "BEEHIVE"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 6
+      "HONEYCOMB": 3
+  - output:
+      first: "IRON_BLOCK"
+      second: 1
+    inputs:
+      "IRON_INGOT": 9
+  - output:
+      first: "GRAY_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "GRAY_DYE": 1
+  - output:
+      first: "CARTOGRAPHY_TABLE"
+      second: 1
+    inputs:
+      "PAPER": 2
+      "BIRCH_PLANKS": 4
+  - output:
+      first: "LIME_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "LIME_DYE": 1
+  - output:
+      first: "YELLOW_BED"
+      second: 1
+    inputs:
+      "YELLOW_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "JUNGLE_WOOD"
+      second: 3
+    inputs:
+      "JUNGLE_LOG": 4
+  - output:
+      first: "LEATHER_CHESTPLATE"
+      second: 1
+    inputs:
+      "LEATHER": 8
+  - output:
+      first: "IRON_HELMET"
+      second: 1
+    inputs:
+      "IRON_INGOT": 5
+  - output:
+      first: "DIAMOND_AXE"
+      second: 1
+    inputs:
+      "DIAMOND": 3
+      "STICK": 2
+  - output:
+      first: "SPRUCE_FENCE_GATE"
+      second: 1
+    inputs:
+      "STICK": 4
+      "SPRUCE_PLANKS": 2
+  - output:
+      first: "SLIME_BALL"
+      second: 9
+    inputs:
+      "SLIME_BLOCK": 1
+  - output:
+      first: "LIME_TERRACOTTA"
+      second: 8
+    inputs:
+      "TERRACOTTA": 8
+      "LIME_DYE": 1
+  - output:
+      first: "BLACK_WOOL"
+      second: 1
+    inputs:
+      "BLACK_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "CYAN_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "CYAN_DYE": 1
+  - output:
+      first: "SUGAR"
+      second: 3
+    inputs:
+      "HONEY_BOTTLE": 1
+  - output:
+      first: "IRON_TRAPDOOR"
+      second: 1
+    inputs:
+      "IRON_INGOT": 4
+  - output:
+      first: "COAL_BLOCK"
+      second: 1
+    inputs:
+      "COAL": 9
+  - output:
+      first: "BEETROOT_SOUP"
+      second: 1
+    inputs:
+      "BOWL": 1
+      "BEETROOT": 6
+  - output:
+      first: "IRON_BARS"
+      second: 16
+    inputs:
+      "IRON_INGOT": 6
+  - output:
+      first: "GOLD_NUGGET"
+      second: 9
+    inputs:
+      "GOLD_INGOT": 1
+  - output:
+      first: "MAGENTA_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "MAGENTA_DYE": 1
+  - output:
+      first: "ENDER_CHEST"
+      second: 1
+    inputs:
+      "OBSIDIAN": 8
+      "ENDER_EYE": 1
+  - output:
+      first: "MAGENTA_WOOL"
+      second: 1
+    inputs:
+      "MAGENTA_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "LIME_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "LIME_STAINED_GLASS": 6
+  - output:
+      first: "GRAY_DYE"
+      second: 2
+    inputs:
+      "BLACK_DYE": 1
+      "WHITE_DYE": 1
+  - output:
+      first: "DRIED_KELP"
+      second: 9
+    inputs:
+      "DRIED_KELP_BLOCK": 1
+  - output:
+      first: "GREEN_BANNER"
+      second: 1
+    inputs:
+      "GREEN_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "COBBLESTONE_WALL"
+      second: 6
+    inputs:
+      "COBBLESTONE": 6
+  - output:
+      first: "RED_BED"
+      second: 1
+    inputs:
+      "WHITE_BED": 1
+      "RED_DYE": 1
+  - output:
+      first: "LANTERN"
+      second: 1
+    inputs:
+      "IRON_NUGGET": 8
+      "TORCH": 1
+  - output:
+      first: "MAGENTA_BANNER"
+      second: 1
+    inputs:
+      "MAGENTA_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "NETHER_WART_BLOCK"
+      second: 1
+    inputs:
+      "NETHER_WART": 9
+  - output:
+      first: "HOPPER"
+      second: 1
+    inputs:
+      "IRON_INGOT": 5
+      "CHEST": 1
+  - output:
+      first: "TRAPPED_CHEST"
+      second: 1
+    inputs:
+      "CHEST": 1
+      "TRIPWIRE_HOOK": 1
+  - output:
+      first: "TRIPWIRE_HOOK"
+      second: 2
+    inputs:
+      "IRON_INGOT": 1
+      "STICK": 1
+      "BIRCH_PLANKS": 1
+  - output:
+      first: "JACK_O_LANTERN"
+      second: 1
+    inputs:
+      "CARVED_PUMPKIN": 1
+      "TORCH": 1
+  - output:
+      first: "PURPUR_SLAB"
+      second: 6
+    inputs:
+      "PURPUR_BLOCK": 3
+  - output:
+      first: "GREEN_CARPET"
+      second: 3
+    inputs:
+      "GREEN_WOOL": 2
+  - output:
+      first: "RED_NETHER_BRICK_SLAB"
+      second: 6
+    inputs:
+      "RED_NETHER_BRICKS": 3
+  - output:
+      first: "LIGHT_GRAY_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "LIGHT_GRAY_DYE": 1
+  - output:
+      first: "MOSSY_STONE_BRICKS"
+      second: 1
+    inputs:
+      "STONE_BRICKS": 1
+      "VINE": 1
+  - output:
+      first: "RED_STAINED_GLASS"
+      second: 8
+    inputs:
+      "GLASS": 8
+      "RED_DYE": 1
+  - output:
+      first: "BIRCH_FENCE"
+      second: 3
+    inputs:
+      "BIRCH_PLANKS": 4
+      "STICK": 2
+  - output:
+      first: "SPRUCE_PLANKS"
+      second: 4
+    inputs:
+      "STRIPPED_SPRUCE_LOG": 1
+  - output:
+      first: "WHITE_CARPET"
+      second: 3
+    inputs:
+      "WHITE_WOOL": 2
+  - output:
+      first: "MELON"
+      second: 1
+    inputs:
+      "MELON_SLICE": 9
+  - output:
+      first: "IRON_NUGGET"
+      second: 9
+    inputs:
+      "IRON_INGOT": 1
+  - output:
+      first: "DIORITE_WALL"
+      second: 6
+    inputs:
+      "DIORITE": 6
+  - output:
+      first: "QUARTZ_STAIRS"
+      second: 4
+    inputs:
+      "CHISELED_QUARTZ_BLOCK": 6
+  - output:
+      first: "DAYLIGHT_DETECTOR"
+      second: 1
+    inputs:
+      "GLASS": 3
+      "QUARTZ": 3
+      "JUNGLE_SLAB": 3
+  - output:
+      first: "BONE_BLOCK"
+      second: 1
+    inputs:
+      "BONE_MEAL": 9
+  - output:
+      first: "CYAN_STAINED_GLASS_PANE"
+      second: 16
+    inputs:
+      "CYAN_STAINED_GLASS": 6
+  - output:
+      first: "WOODEN_AXE"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 3
+      "STICK": 2
+  - output:
+      first: "DISPENSER"
+      second: 1
+    inputs:
+      "COBBLESTONE": 7
+      "BOW": 1
+      "REDSTONE": 1
+  - output:
+      first: "SHULKER_BOX"
+      second: 1
+    inputs:
+      "SHULKER_SHELL": 2
+      "CHEST": 1
+  - output:
+      first: "STONECUTTER"
+      second: 1
+    inputs:
+      "IRON_INGOT": 1
+      "STONE": 3
+  - output:
+      first: "STONE_PICKAXE"
+      second: 1
+    inputs:
+      "COBBLESTONE": 3
+      "STICK": 2
+  - output:
+      first: "STRIPPED_DARK_OAK_WOOD"
+      second: 3
+    inputs:
+      "STRIPPED_DARK_OAK_LOG": 4
+  - output:
+      first: "LIGHT_GRAY_BANNER"
+      second: 1
+    inputs:
+      "LIGHT_GRAY_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "RED_WOOL"
+      second: 1
+    inputs:
+      "RED_DYE": 1
+      "WHITE_WOOL": 1
+  - output:
+      first: "RABBIT_STEW"
+      second: 1
+    inputs:
+      "BAKED_POTATO": 1
+      "COOKED_RABBIT": 1
+      "BOWL": 1
+      "CARROT": 1
+      "BROWN_MUSHROOM": 1
+  - output:
+      first: "SMOOTH_RED_SANDSTONE_STAIRS"
+      second: 4
+    inputs:
+      "SMOOTH_RED_SANDSTONE": 6
+  - output:
+      first: "MAGENTA_STAINED_GLASS_PANE"
+      second: 8
+    inputs:
+      "GLASS_PANE": 8
+      "MAGENTA_DYE": 1
+  - output:
+      first: "END_CRYSTAL"
+      second: 1
+    inputs:
+      "GLASS": 7
+      "ENDER_EYE": 1
+      "GHAST_TEAR": 1
+  - output:
+      first: "WHITE_BANNER"
+      second: 1
+    inputs:
+      "WHITE_WOOL": 6
+      "STICK": 1
+  - output:
+      first: "LIGHT_GRAY_CARPET"
+      second: 3
+    inputs:
+      "LIGHT_GRAY_WOOL": 2
+  - output:
+      first: "DARK_OAK_BUTTON"
+      second: 1
+    inputs:
+      "DARK_OAK_PLANKS": 1
+  - output:
+      first: "YELLOW_DYE"
+      second: 1
+    inputs:
+      "DANDELION": 1
+  - output:
+      first: "BLUE_BED"
+      second: 1
+    inputs:
+      "BLUE_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "BROWN_BED"
+      second: 1
+    inputs:
+      "BROWN_WOOL": 3
+      "BIRCH_PLANKS": 3
+  - output:
+      first: "PISTON"
+      second: 1
+    inputs:
+      "BIRCH_PLANKS": 3
+      "COBBLESTONE": 4
+      "IRON_INGOT": 1
+      "REDSTONE": 1
+  - output:
+      first: "IRON_NUGGET"
+      second: 1
+    inputs:
+      "IRON_PICKAXE": 1
+  - output:
+      first: "REDSTONE"
+      second: 1
+    inputs:
+      "REDSTONE_ORE": 1
+  - output:
+      first: "IRON_INGOT"
+      second: 1
+    inputs:
+      "IRON_ORE": 1
+  - output:
+      first: "EMERALD"
+      second: 1
+    inputs:
+      "EMERALD_ORE": 1
+  - output:
+      first: "GOLD_INGOT"
+      second: 1
+    inputs:
+      "GOLD_ORE": 1
+  - output:
+      first: "LAPIS_LAZULI"
+      second: 1
+    inputs:
+      "LAPIS_ORE": 1
+  - output:
+      first: "DIAMOND"
+      second: 1
+    inputs:
+      "DIAMOND_ORE": 1
+  - output:
+      first: "GOLD_NUGGET"
+      second: 1
+    inputs:
+      "GOLDEN_PICKAXE": 1
+  - output:
+      first: "QUARTZ"
+      second: 1
+    inputs:
+      "NETHER_QUARTZ_ORE": 1
+  - output:
+      first: "COAL"
+      second: 1
+    inputs:
+      "COAL_ORE": 1
+  - output:
+      first: "COOKED_COD"
+      second: 1
+    inputs:
+      "COD": 1
+  - output:
+      first: "COOKED_RABBIT"
+      second: 1
+    inputs:
+      "RABBIT": 1
+  - output:
+      first: "COOKED_BEEF"
+      second: 1
+    inputs:
+      "BEEF": 1
+  - output:
+      first: "COOKED_CHICKEN"
+      second: 1
+    inputs:
+      "CHICKEN": 1
+  - output:
+      first: "COOKED_MUTTON"
+      second: 1
+    inputs:
+      "MUTTON": 1
+  - output:
+      first: "BAKED_POTATO"
+      second: 1
+    inputs:
+      "POTATO": 1
+  - output:
+      first: "DRIED_KELP"
+      second: 1
+    inputs:
+      "KELP": 1
+  - output:
+      first: "COOKED_PORKCHOP"
+      second: 1
+    inputs:
+      "PORKCHOP": 1
+  - output:
+      first: "COOKED_SALMON"
+      second: 1
+    inputs:
+      "SALMON": 1
+  - output:
+      first: "COOKED_MUTTON"
+      second: 1
+    inputs:
+      "MUTTON": 1
+  - output:
+      first: "COOKED_COD"
+      second: 1
+    inputs:
+      "COD": 1
+  - output:
+      first: "BAKED_POTATO"
+      second: 1
+    inputs:
+      "POTATO": 1
+  - output:
+      first: "COOKED_CHICKEN"
+      second: 1
+    inputs:
+      "CHICKEN": 1
+  - output:
+      first: "COOKED_BEEF"
+      second: 1
+    inputs:
+      "BEEF": 1
+  - output:
+      first: "COOKED_RABBIT"
+      second: 1
+    inputs:
+      "RABBIT": 1
+  - output:
+      first: "DRIED_KELP"
+      second: 1
+    inputs:
+      "KELP": 1
+  - output:
+      first: "COOKED_PORKCHOP"
+      second: 1
+    inputs:
+      "PORKCHOP": 1
+  - output:
+      first: "COOKED_SALMON"
+      second: 1
+    inputs:
+      "SALMON": 1
+  - output:
+      first: "CHISELED_RED_SANDSTONE"
+      second: 1
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "POLISHED_DIORITE_SLAB"
+      second: 2
+    inputs:
+      "POLISHED_DIORITE": 1
+  - output:
+      first: "STONE_BRICK_WALL"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "CUT_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "NETHER_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "NETHER_BRICKS": 1
+  - output:
+      first: "MOSSY_COBBLESTONE_WALL"
+      second: 1
+    inputs:
+      "MOSSY_COBBLESTONE": 1
+  - output:
+      first: "QUARTZ_PILLAR"
+      second: 1
+    inputs:
+      "QUARTZ_BLOCK": 1
+  - output:
+      first: "PRISMARINE_SLAB"
+      second: 2
+    inputs:
+      "PRISMARINE": 1
+  - output:
+      first: "CUT_RED_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "END_STONE_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "END_STONE": 1
+  - output:
+      first: "SMOOTH_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "SMOOTH_SANDSTONE": 1
+  - output:
+      first: "POLISHED_DIORITE_STAIRS"
+      second: 1
+    inputs:
+      "POLISHED_DIORITE": 1
+  - output:
+      first: "RED_SANDSTONE_STAIRS"
+      second: 1
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "PURPUR_PILLAR"
+      second: 1
+    inputs:
+      "PURPUR_BLOCK": 1
+  - output:
+      first: "DARK_PRISMARINE_STAIRS"
+      second: 1
+    inputs:
+      "DARK_PRISMARINE": 1
+  - output:
+      first: "QUARTZ_STAIRS"
+      second: 1
+    inputs:
+      "QUARTZ_BLOCK": 1
+  - output:
+      first: "PRISMARINE_STAIRS"
+      second: 1
+    inputs:
+      "PRISMARINE": 1
+  - output:
+      first: "STONE_BRICK_WALL"
+      second: 1
+    inputs:
+      "STONE_BRICKS": 1
+  - output:
+      first: "CHISELED_QUARTZ_BLOCK"
+      second: 1
+    inputs:
+      "QUARTZ_BLOCK": 1
+  - output:
+      first: "END_STONE_BRICK_SLAB"
+      second: 2
+    inputs:
+      "END_STONE": 1
+  - output:
+      first: "END_STONE_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "END_STONE_BRICKS": 1
+  - output:
+      first: "COBBLESTONE_STAIRS"
+      second: 1
+    inputs:
+      "COBBLESTONE": 1
+  - output:
+      first: "BRICK_WALL"
+      second: 1
+    inputs:
+      "BRICKS": 1
+  - output:
+      first: "PURPUR_STAIRS"
+      second: 1
+    inputs:
+      "PURPUR_BLOCK": 1
+  - output:
+      first: "SMOOTH_QUARTZ_SLAB"
+      second: 2
+    inputs:
+      "SMOOTH_QUARTZ": 1
+  - output:
+      first: "MOSSY_STONE_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "MOSSY_STONE_BRICKS": 1
+  - output:
+      first: "STONE_BRICKS"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "COBBLESTONE_SLAB"
+      second: 2
+    inputs:
+      "COBBLESTONE": 1
+  - output:
+      first: "MOSSY_STONE_BRICK_SLAB"
+      second: 2
+    inputs:
+      "MOSSY_STONE_BRICKS": 1
+  - output:
+      first: "END_STONE_BRICKS"
+      second: 1
+    inputs:
+      "END_STONE": 1
+  - output:
+      first: "POLISHED_GRANITE_SLAB"
+      second: 2
+    inputs:
+      "GRANITE": 1
+  - output:
+      first: "PRISMARINE_BRICK_SLAB"
+      second: 2
+    inputs:
+      "PRISMARINE_BRICKS": 1
+  - output:
+      first: "RED_NETHER_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "RED_NETHER_BRICKS": 1
+  - output:
+      first: "RED_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "POLISHED_GRANITE_STAIRS"
+      second: 1
+    inputs:
+      "GRANITE": 1
+  - output:
+      first: "PURPUR_SLAB"
+      second: 2
+    inputs:
+      "PURPUR_BLOCK": 1
+  - output:
+      first: "CHISELED_STONE_BRICKS"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "DARK_PRISMARINE_SLAB"
+      second: 2
+    inputs:
+      "DARK_PRISMARINE": 1
+  - output:
+      first: "RED_NETHER_BRICK_SLAB"
+      second: 2
+    inputs:
+      "RED_NETHER_BRICKS": 1
+  - output:
+      first: "QUARTZ_SLAB"
+      second: 2
+    inputs:
+      "QUARTZ_BLOCK": 1
+  - output:
+      first: "BRICK_SLAB"
+      second: 2
+    inputs:
+      "BRICKS": 1
+  - output:
+      first: "SANDSTONE_WALL"
+      second: 1
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "SMOOTH_RED_SANDSTONE_STAIRS"
+      second: 1
+    inputs:
+      "SMOOTH_RED_SANDSTONE": 1
+  - output:
+      first: "POLISHED_DIORITE_SLAB"
+      second: 2
+    inputs:
+      "DIORITE": 1
+  - output:
+      first: "SANDSTONE_STAIRS"
+      second: 1
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "POLISHED_ANDESITE_SLAB"
+      second: 2
+    inputs:
+      "ANDESITE": 1
+  - output:
+      first: "GRANITE_STAIRS"
+      second: 1
+    inputs:
+      "GRANITE": 1
+  - output:
+      first: "GRANITE_SLAB"
+      second: 2
+    inputs:
+      "GRANITE": 1
+  - output:
+      first: "POLISHED_GRANITE_STAIRS"
+      second: 1
+    inputs:
+      "POLISHED_GRANITE": 1
+  - output:
+      first: "STONE_BRICK_SLAB"
+      second: 2
+    inputs:
+      "STONE_BRICKS": 1
+  - output:
+      first: "ANDESITE_STAIRS"
+      second: 1
+    inputs:
+      "ANDESITE": 1
+  - output:
+      first: "SMOOTH_STONE_SLAB"
+      second: 2
+    inputs:
+      "SMOOTH_STONE": 1
+  - output:
+      first: "MOSSY_COBBLESTONE_SLAB"
+      second: 2
+    inputs:
+      "MOSSY_COBBLESTONE": 1
+  - output:
+      first: "CUT_RED_SANDSTONE"
+      second: 1
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "POLISHED_ANDESITE"
+      second: 1
+    inputs:
+      "ANDESITE": 1
+  - output:
+      first: "COBBLESTONE_WALL"
+      second: 1
+    inputs:
+      "COBBLESTONE": 1
+  - output:
+      first: "PRISMARINE_WALL"
+      second: 1
+    inputs:
+      "PRISMARINE": 1
+  - output:
+      first: "POLISHED_DIORITE"
+      second: 1
+    inputs:
+      "DIORITE": 1
+  - output:
+      first: "POLISHED_DIORITE_STAIRS"
+      second: 1
+    inputs:
+      "DIORITE": 1
+  - output:
+      first: "STONE_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "ANDESITE_SLAB"
+      second: 2
+    inputs:
+      "ANDESITE": 1
+  - output:
+      first: "RED_NETHER_BRICK_WALL"
+      second: 1
+    inputs:
+      "RED_NETHER_BRICKS": 1
+  - output:
+      first: "SMOOTH_QUARTZ_STAIRS"
+      second: 1
+    inputs:
+      "SMOOTH_QUARTZ": 1
+  - output:
+      first: "POLISHED_GRANITE_SLAB"
+      second: 2
+    inputs:
+      "POLISHED_GRANITE": 1
+  - output:
+      first: "GRANITE_WALL"
+      second: 1
+    inputs:
+      "GRANITE": 1
+  - output:
+      first: "SMOOTH_SANDSTONE_STAIRS"
+      second: 1
+    inputs:
+      "SMOOTH_SANDSTONE": 1
+  - output:
+      first: "STONE_BRICK_SLAB"
+      second: 2
+    inputs:
+      "STONE": 1
+  - output:
+      first: "STONE_SLAB"
+      second: 2
+    inputs:
+      "STONE": 1
+  - output:
+      first: "END_STONE_BRICK_WALL"
+      second: 1
+    inputs:
+      "END_STONE": 1
+  - output:
+      first: "SMOOTH_RED_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "SMOOTH_RED_SANDSTONE": 1
+  - output:
+      first: "NETHER_BRICK_WALL"
+      second: 1
+    inputs:
+      "NETHER_BRICKS": 1
+  - output:
+      first: "MOSSY_STONE_BRICK_WALL"
+      second: 1
+    inputs:
+      "MOSSY_STONE_BRICKS": 1
+  - output:
+      first: "POLISHED_ANDESITE_STAIRS"
+      second: 1
+    inputs:
+      "POLISHED_ANDESITE": 1
+  - output:
+      first: "ANDESITE_WALL"
+      second: 1
+    inputs:
+      "ANDESITE": 1
+  - output:
+      first: "DIORITE_SLAB"
+      second: 2
+    inputs:
+      "DIORITE": 1
+  - output:
+      first: "PRISMARINE_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "PRISMARINE_BRICKS": 1
+  - output:
+      first: "END_STONE_BRICK_WALL"
+      second: 1
+    inputs:
+      "END_STONE_BRICKS": 1
+  - output:
+      first: "STONE_BRICK_STAIRS"
+      second: 1
+    inputs:
+      "STONE_BRICKS": 1
+  - output:
+      first: "CHISELED_SANDSTONE"
+      second: 1
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "RED_SANDSTONE_WALL"
+      second: 1
+    inputs:
+      "RED_SANDSTONE": 1
+  - output:
+      first: "POLISHED_ANDESITE_SLAB"
+      second: 2
+    inputs:
+      "POLISHED_ANDESITE": 1
+  - output:
+      first: "END_STONE_BRICK_SLAB"
+      second: 2
+    inputs:
+      "END_STONE_BRICKS": 1
+  - output:
+      first: "CHISELED_STONE_BRICKS"
+      second: 1
+    inputs:
+      "STONE_BRICKS": 1
+  - output:
+      first: "POLISHED_GRANITE"
+      second: 1
+    inputs:
+      "GRANITE": 1
+  - output:
+      first: "BRICK_STAIRS"
+      second: 1
+    inputs:
+      "BRICKS": 1
+  - output:
+      first: "NETHER_BRICK_SLAB"
+      second: 2
+    inputs:
+      "NETHER_BRICKS": 1
+  - output:
+      first: "CUT_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "CUT_SANDSTONE": 1
+  - output:
+      first: "POLISHED_ANDESITE_STAIRS"
+      second: 1
+    inputs:
+      "ANDESITE": 1
+  - output:
+      first: "STONE_STAIRS"
+      second: 1
+    inputs:
+      "STONE": 1
+  - output:
+      first: "CUT_SANDSTONE"
+      second: 1
+    inputs:
+      "SANDSTONE": 1
+  - output:
+      first: "DIORITE_STAIRS"
+      second: 1
+    inputs:
+      "DIORITE": 1
+  - output:
+      first: "MOSSY_COBBLESTONE_STAIRS"
+      second: 1
+    inputs:
+      "MOSSY_COBBLESTONE": 1
+  - output:
+      first: "CUT_RED_SANDSTONE_SLAB"
+      second: 2
+    inputs:
+      "CUT_RED_SANDSTONE": 1
+  - output:
+      first: "DIORITE_WALL"
+      second: 1
+    inputs:
+      "DIORITE": 1

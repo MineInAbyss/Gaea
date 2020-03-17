@@ -20,6 +20,10 @@ class GaeaPlugin : JavaPlugin(){
         getCommand("gaea")?.setExecutor(InfoCommand)
         server.pluginManager.registerEvents(ChunkListener, this)
         server.scheduler.scheduleSyncRepeatingTask(this, ChunkListener,200,1)
+
+        //logger.info(calcMarket().toString())
+
+
     }
 }
 

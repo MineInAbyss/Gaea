@@ -1,19 +1,38 @@
 package org.cultofclang.minecraft.gaea
 
+import org.bukkit.Bukkit
 import org.bukkit.Chunk
 import org.bukkit.Location
+import org.bukkit.Material
 import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockBreakEvent
 import org.bukkit.event.block.BlockPlaceEvent
+import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.event.world.ChunkLoadEvent
-
+import org.bukkit.inventory.ItemStack
 import org.cultofclang.utils.CHUNK_HEIGHT
 import org.cultofclang.utils.ZONE_SIZE
 import java.util.concurrent.ConcurrentLinkedQueue
 
 object ChunkListener : Listener , Runnable {
+
+
+    @EventHandler(priority = EventPriority.HIGHEST)
+    fun onPlayerInteract(event:PlayerInteractEvent) {
+        val p = event.player
+
+        if (event.clickedBlock?.type == Material.EMERALD_BLOCK) {
+            p.sendMessage("You found me!")
+            event.isCancelled = true
+            val inv = Bukkit.getServer().createInventory(p, 54, "Void Box")
+            inv.setItem(0, ItemStack(Material.CLAY_BALL, 500))
+            inv.setItem(1, ItemStack(Material.OAK_BOAT))
+            inv.setItem(1, ItemStack(Material.DIAMOND_HOE))
+            p.openInventory(inv)
+        }
+    }
 
     private var toProcess = ConcurrentLinkedQueue<Chunk>()
 

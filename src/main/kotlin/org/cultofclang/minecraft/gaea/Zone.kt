@@ -5,6 +5,7 @@ import org.bukkit.Chunk
 import org.bukkit.Location
 import org.bukkit.Material
 import org.bukkit.block.Block
+import org.bukkit.entity.Player
 import org.cultofclang.utils.*
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass
@@ -92,11 +93,11 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
         }
     }
 
-    private fun update(value: Float, changesToBeMade:Boolean){
+    private fun update(value: Float, setClean:Boolean){
         transaction(world.database) {
-            balance = value
             timestamp = now()
-            if(!changesToBeMade)
+            balance = value.coerceAtLeast(effectiveBalance)
+            if(setClean)
             dirty = false
         }
     }
@@ -122,13 +123,12 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
 
                 val decayPower = (1-zone.effectiveBalance / Gaea.settings.timeBetweenDecay).coerceAtLeast(1f)
 
-
                 zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
                     val prob = Gaea.settings.getDecayProbability(client.type)
 
-                    val realProb = 1 - (1 - prob).pow(decayPower)
                     if(client.type != master.type) {
                         changesToBeMade = true
+                        val realProb = 1 - (1 - prob).pow(decayPower)
                         if (bool(realProb)) {
                             client.setBlockData(master.blockData, false)
 
@@ -140,11 +140,20 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
                 }
             }
             //if(!force)
-            zone.update(0f, changesToBeMade)
-            Bukkit.getLogger().info("apply decay for zone ${zone.x} ${zone.y} ${zone.z} chunk ${chunk.x} ${chunk.z} in ${timeMs/1.0e6}ms")
+            zone.update(0f, setClean = !changesToBeMade)
+            Bukkit.getLogger().info("apply decay for $zone in ${timeMs/1.0e6}ms")
             return  true
         }
         return false
+    }
+
+    fun claim(sender: Player, claimTime: Float) {
+        Bukkit.getLogger().info("$sender claim $this for ${durationHuman(claimTime)}")
+        update(claimTime, setClean = false)
+    }
+
+    override fun toString(): String {
+        return "Zone[$x,$y,$z]"
     }
 }
 

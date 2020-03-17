@@ -7,7 +7,3 @@ object Zones : LongIdTable() {
     val timestamp = long("timestamp").default(0L)
     val dirty = bool("dirty").default(false)
 }
-
-
-
-
