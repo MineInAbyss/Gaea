@@ -15,21 +15,22 @@ import kotlin.math.pow
 import kotlin.system.measureNanoTime
 
 class Zone(id: EntityID<Long>) : LongEntity(id) {
-    val changed: Boolean get()=dirty
+    val changed: Boolean get() = dirty
     lateinit var chunk: Chunk
-    lateinit var world:TrackedWorld
-    companion object : LongEntityClass<Zone>(Zones){
-        private fun posIndex(x:Int, y:Int, z:Int) = 0L
-                .setSBits(4,30, x)
-                .setBits(0,4, y)
-                .setSBits(34, 30, z)
+    lateinit var world: TrackedWorld
+
+    companion object : LongEntityClass<Zone>(Zones) {
+        private fun posIndex(x: Int, y: Int, z: Int) = 0L
+            .setSBits(4, 30, x)
+            .setBits(0, 4, y)
+            .setSBits(34, 30, z)
 
 
         fun getweak(location: Location): Zone? {
             val x = chunk(location.blockX)
             val y = chunk(location.blockY)
             val z = chunk(location.blockZ)
-            val world = Gaea.getTrackedWorld(location.world?: return null)?:return null
+            val world = Gaea.getTrackedWorld(location.world ?: return null) ?: return null
 
             var output: Zone? = null
 
@@ -37,7 +38,7 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
                 output = findById(posIndex(x, y, z))
             }
 
-            if (output!=null) {
+            if (output != null) {
                 output!!.world = world
                 output!!.chunk = location.chunk
             }
@@ -48,12 +49,12 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             val x = chunk(location.blockX)
             val y = chunk(location.blockY)
             val z = chunk(location.blockZ)
-            val world = Gaea.getTrackedWorld(location.world?: return null)?:return null
+            val world = Gaea.getTrackedWorld(location.world ?: return null) ?: return null
 
             lateinit var output: Zone
             transaction(world.database) {
                 output = findById(posIndex(x, y, z))
-                    ?:Zone.new(posIndex(x, y, z)){
+                    ?: Zone.new(posIndex(x, y, z)) {
                         balance = 0f
                         timestamp = now()
                     }
@@ -63,6 +64,7 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             return output
         }
     }
+
     private var balance by Zones.balance
     private var timestamp by Zones.timestamp
     private var dirty by Zones.dirty
@@ -83,50 +85,50 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             return id.value.sBits(34, 30).toInt()
         }
 
-    val effectiveBalance : Float get() = balance - timePassed
+    val effectiveBalance: Float get() = balance - timePassed
 
     val timePassed get() = now() - timestamp
 
-    fun  set(value: Float){
+    fun set(value: Float) {
         transaction(world.database) {
             balance = value
         }
     }
 
-    private fun update(value: Float, setClean:Boolean){
+    private fun update(value: Float, setClean: Boolean) {
         transaction(world.database) {
             timestamp = now()
             balance = value.coerceAtLeast(effectiveBalance)
-            if(setClean)
-            dirty = false
+            if (setClean)
+                dirty = false
         }
     }
 
-    fun markDirtyAndSetMinBalance(minEffectiveBal: Float, setDirty: Boolean =true) {
+    fun markDirtyAndSetMinBalance(minEffectiveBal: Float, setDirty: Boolean = true) {
         transaction(world.database) {
-            balance = (effectiveBalance.coerceAtLeast(minEffectiveBal))+timePassed
-            if(setDirty)
-            dirty = true
+            balance = (effectiveBalance.coerceAtLeast(minEffectiveBal)) + timePassed
+            if (setDirty)
+                dirty = true
         }
     }
 
-    fun decay( force: Boolean = false):Boolean {
-        val zone=this
+    fun decay(force: Boolean = false): Boolean {
+        val zone = this
         val chunk = zone.chunk
 
-        val shouldRegen =zone.dirty && zone.effectiveBalance < 0
-        if(shouldRegen || force){
+        val shouldRegen = zone.dirty && zone.effectiveBalance < 0
+        if (shouldRegen || force) {
 
             var changesToBeMade = false
-            val timeMs =   measureNanoTime {
+            val timeMs = measureNanoTime {
                 val masterChunk = zone.world.master.getChunkAt(chunk.x, chunk.z)
 
-                val decayPower = (1-zone.effectiveBalance / Gaea.settings.timeBetweenDecay).coerceAtLeast(1f)
+                val decayPower = (1 - zone.effectiveBalance / Gaea.settings.timeBetweenDecay).coerceAtLeast(1f)
 
                 zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
                     val prob = Gaea.settings.getDecayProbability(client.type)
 
-                    if(client.type != master.type) {
+                    if (client.type != master.type) {
                         changesToBeMade = true
                         val realProb = 1 - (1 - prob).pow(decayPower)
                         if (bool(realProb)) {
@@ -141,8 +143,8 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             }
             //if(!force)
             zone.update(0f, setClean = !changesToBeMade)
-            Bukkit.getLogger().info("apply decay for $zone in ${timeMs/1.0e6}ms")
-            return  true
+            Bukkit.getLogger().info("apply decay for $zone in ${timeMs / 1.0e6}ms")
+            return true
         }
         return false
     }

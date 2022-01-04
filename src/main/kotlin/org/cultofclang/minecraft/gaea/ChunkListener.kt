@@ -16,11 +16,11 @@ import org.cultofclang.utils.CHUNK_HEIGHT
 import org.cultofclang.utils.ZONE_SIZE
 import java.util.concurrent.ConcurrentLinkedQueue
 
-object ChunkListener : Listener , Runnable {
+object ChunkListener : Listener, Runnable {
 
 
     @EventHandler(priority = EventPriority.HIGHEST)
-    fun onPlayerInteract(event:PlayerInteractEvent) {
+    fun onPlayerInteract(event: PlayerInteractEvent) {
         val p = event.player
 
         if (event.clickedBlock?.type == Material.EMERALD_BLOCK) {
@@ -36,37 +36,37 @@ object ChunkListener : Listener , Runnable {
 
     private var toProcess = ConcurrentLinkedQueue<Chunk>()
 
-    fun addBalance(location: Location, change: Float){
-        val zone = Zone.get(location)?:return
+    fun addBalance(location: Location, change: Float) {
+        val zone = Zone.get(location) ?: return
         zone.markDirtyAndSetMinBalance(change)
     }
 
-    @EventHandler(priority=EventPriority.MONITOR, ignoreCancelled = true)
-    fun onBlockPlace(event: BlockBreakEvent){
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    fun onBlockPlace(event: BlockBreakEvent) {
         addBalance(event.block.location, Gaea.settings.decayTimeBlockBreak)
     }
 
-    @EventHandler(priority=EventPriority.MONITOR, ignoreCancelled = true)
-    fun onBlockBreak(event: BlockPlaceEvent){
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    fun onBlockBreak(event: BlockPlaceEvent) {
         addBalance(event.block.location, Gaea.settings.decayTimeBlockPlace)
     }
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
-    fun onChunkLoad(event: ChunkLoadEvent){
+    fun onChunkLoad(event: ChunkLoadEvent) {
         val chunk = event.chunk
         toProcess.add(chunk)
     }
 
     override fun run() {
         var done = 0
-        while(done < Gaea.settings.maxDecayPerTick) {
+        while (done < Gaea.settings.maxDecayPerTick) {
             val chunk = toProcess.poll() ?: return
-            if(!chunk.isLoaded)
+            if (!chunk.isLoaded)
                 continue
 
             for (y in 0 until CHUNK_HEIGHT step ZONE_SIZE)
-                if(Zone.getweak(chunk.getBlock(0, y, 0).location)?.decay() == true)
-                    done+=1
+                if (Zone.getweak(chunk.getBlock(0, y, 0).location)?.decay() == true)
+                    done += 1
         }
     }
 }

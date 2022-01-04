@@ -8,12 +8,13 @@ import org.jetbrains.exposed.sql.transactions.transaction
 import org.jetbrains.exposed.sql.transactions.transactionManager
 import java.sql.Connection
 
-class TrackedWorld(val world: World, val master:World, var database: Database) {
+class TrackedWorld(val world: World, val master: World, var database: Database) {
 
-    companion object{
-        private fun setUpDb(worldName:String): Database{
+    companion object {
+        private fun setUpDb(worldName: String): Database {
             val db = Database.connect("jdbc:sqlite:$worldName.db", "org.sqlite.JDBC")
-            db.transactionManager.defaultIsolationLevel = Connection.TRANSACTION_SERIALIZABLE //TRANSACTION_READ_UNCOMMITTED
+            db.transactionManager.defaultIsolationLevel =
+                Connection.TRANSACTION_SERIALIZABLE //TRANSACTION_READ_UNCOMMITTED
 
             transaction(db) {
                 SchemaUtils.createMissingTablesAndColumns(Zones)
@@ -21,9 +22,10 @@ class TrackedWorld(val world: World, val master:World, var database: Database) {
             return db
         }
     }
-    constructor(trackedName:String, masterName:String) : this(
-            world = Bukkit.getServer().getWorld(trackedName)?: error("cannot load world $masterName"),
-            master = Bukkit.getServer().getWorld(masterName)?: error("cannot load master world $masterName"),
-            database = setUpDb(trackedName)
+
+    constructor(trackedName: String, masterName: String) : this(
+        world = Bukkit.getServer().getWorld(trackedName) ?: error("cannot load world $masterName"),
+        master = Bukkit.getServer().getWorld(masterName) ?: error("cannot load master world $masterName"),
+        database = setUpDb(trackedName)
     )
 }

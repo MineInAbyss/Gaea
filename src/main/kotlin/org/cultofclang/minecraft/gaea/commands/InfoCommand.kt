@@ -11,7 +11,7 @@ import org.cultofclang.utils.ZONE_SIZE
 import org.cultofclang.utils.durationHuman
 import kotlin.math.ceil
 
-object InfoCommand : CommandExecutor{
+object InfoCommand : CommandExecutor {
     /**
      * Executes the given command, returning its success.
      * <br></br>
@@ -27,63 +27,66 @@ object InfoCommand : CommandExecutor{
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         val bagOfFlags = args.toSet()
 
-        if(sender !is Player) {
+        if (sender !is Player) {
             sender.sendMessage("need location info")
             return false
         }
 
 
-
-
         val location = sender.location
 
-        val zone = Zone.get(location)?: return false
+        val zone = Zone.get(location) ?: return false
 
 
-        if(args.size == 2 && args[0] == "set"){
+        if (args.size == 2 && args[0] == "set") {
             zone.set(args[1].toFloat())
         }
 
-        if("d" in bagOfFlags) {
+        if ("d" in bagOfFlags) {
             zone.decay(false)
         }
 
-        if("r" in bagOfFlags) {
+        if ("r" in bagOfFlags) {
             zone.decay(true)
         }
 
 
-        if("c" in bagOfFlags) {
+        if ("c" in bagOfFlags) {
             val r = Gaea.settings.claimRadius
 
-val hs = sender.inventory.itemInMainHand
+            val hs = sender.inventory.itemInMainHand
             val handValue = Broker.value(hs)
 
-            if(handValue < Gaea.settings.claimCost)
-            {
+            if (handValue < Gaea.settings.claimCost) {
                 sender.sendMessage("$handValue is not enough to claim chunks")
                 return false
             }
 
-            val need = ceil(hs.amount*Gaea.settings.claimCost/handValue).toInt()
-            hs.amount-=need
+            val need = ceil(hs.amount * Gaea.settings.claimCost / handValue).toInt()
+            hs.amount -= need
 
             sender.sendMessage("paid to claim")
 
             val roi = -r..r step ZONE_SIZE
             for (x in roi)
-                for(y in roi)
-                    for(z in roi)
-                    {
-                        Zone.get(location.clone().add(x.toDouble(),y.toDouble(),z.toDouble()))!!.claim(sender, Gaea.settings.claimTime)
+                for (y in roi)
+                    for (z in roi) {
+                        Zone.get(location.clone().add(x.toDouble(), y.toDouble(), z.toDouble()))!!
+                            .claim(sender, Gaea.settings.claimTime)
                     }
 
             // do a claim
         }
 
-        sender.sendMessage("The zone ${zone.x}, ${zone.y}, ${zone.z} is ${if(zone.changed) "changed" else "unchanged"} safe for ${durationHuman(zone.effectiveBalance)}")
+        sender.sendMessage(
+            "The zone ${zone.x}, ${zone.y}, ${zone.z} is ${if (zone.changed) "changed" else "unchanged"} safe for ${
+                durationHuman(
+                    zone.effectiveBalance
+                )
+            }"
+        )
 
-        return  true
+        return true
     }
 
 }

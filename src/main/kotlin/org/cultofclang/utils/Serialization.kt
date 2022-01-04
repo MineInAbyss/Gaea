@@ -7,4 +7,4 @@ import java.io.InputStream
 
 fun InputStream.readAllToString() = this.bufferedReader().use(BufferedReader::readText)
 
-fun <T>String.parseJson(serializer: KSerializer<T>):T = Yaml.default.parse(serializer,this)
+fun <T> String.parseJson(serializer: KSerializer<T>): T = Yaml.default.decodeFromString(serializer, this)
