@@ -1,8 +1,11 @@
 package org.cultofclang.minecraft.gaea
 
+import com.jeff_media.customblockdata.CustomBlockData
 import org.bukkit.World
 import org.bukkit.plugin.java.JavaPlugin
 import org.cultofclang.minecraft.gaea.commands.InfoCommand
+import org.cultofclang.minecraft.gaea.listeners.ChunkListener
+import org.cultofclang.minecraft.gaea.listeners.TrackedWorld
 import org.cultofclang.utils.parseJson
 import org.cultofclang.utils.readAllToString
 
@@ -22,8 +25,11 @@ class GaeaPlugin : JavaPlugin() {
     override fun onEnable() {
         getCommand("gaea")?.setExecutor(InfoCommand)
         server.pluginManager.registerEvents(ChunkListener, this)
+        server.pluginManager.registerEvents(ProtectionListener, this)
         server.scheduler.scheduleSyncRepeatingTask(this, ChunkListener, 200, 1)
 
+        //CustomBlockData listener
+        CustomBlockData.registerListener(this)
         //logger.info(calcMarket().toString())
 
 

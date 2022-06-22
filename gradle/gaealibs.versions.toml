@@ -1,0 +1,15 @@
+[versions]
+geary = "0.16.100"
+gearyaddons = "0.6.37"
+looty = "0.7.56"
+blocky = "0.3.32"
+
+[libraries]
+geary-papermc-core = { module = "com.mineinabyss:geary-papermc-core", version.ref = "geary" }
+geary-commons-papermc = { module = "com.mineinabyss:geary-commons-papermc", version.ref = "gearyaddons" }
+looty = { module = "com.mineinabyss:looty", version.ref = "looty" }
+blocky = { module = "com.mineinabyss:blocky", version.ref = "blocky" }
+
+minecraft-plugin-blocklocker = "nl.rutgerkok:blocklocker:1.10.4-SNAPSHOT"
+minecraft-plugin-customblockdata = "com.jeff_media:CustomBlockData:2.0.0"
+minecraft-plugin-morepersistentdatatypes = "com.jeff_media:MorePersistentDataTypes:2.3.1"

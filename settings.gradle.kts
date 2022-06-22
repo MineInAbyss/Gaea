@@ -32,5 +32,6 @@ dependencyResolutionManagement {
 
     versionCatalogs {
         create("libs").from("com.mineinabyss:catalog:$idofrontVersion")
+        create("gaealibs").from(files("gradle/gaealibs.versions.toml"))
     }
 }

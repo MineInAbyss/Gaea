@@ -1,7 +1,8 @@
-package org.cultofclang.minecraft.gaea
+package org.cultofclang.minecraft.gaea.listeners
 
 import org.bukkit.Bukkit
 import org.bukkit.World
+import org.cultofclang.minecraft.gaea.Zones
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction

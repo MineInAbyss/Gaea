@@ -4,7 +4,7 @@ import org.bukkit.Chunk
 import org.bukkit.block.Block
 
 
-const val CHUNK_HEIGHT: Int = 256
+const val CHUNK_HEIGHT: Int = 512
 const val CHUNK_WIDTH: Int = 16
 const val ZONE_SIZE: Int = 16
 

@@ -1,4 +1,4 @@
-package org.cultofclang.minecraft.gaea
+package org.cultofclang.minecraft.gaea.listeners
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
@@ -13,6 +13,8 @@ import org.bukkit.event.block.BlockPlaceEvent
 import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.event.world.ChunkLoadEvent
 import org.bukkit.inventory.ItemStack
+import org.cultofclang.minecraft.gaea.Gaea
+import org.cultofclang.minecraft.gaea.Zone
 import org.cultofclang.utils.CHUNK_HEIGHT
 import org.cultofclang.utils.ZONE_SIZE
 import java.util.concurrent.ConcurrentLinkedQueue
@@ -36,7 +38,7 @@ object ChunkListener : Listener, Runnable {
 
     private var toProcess = ConcurrentLinkedQueue<Chunk>()
 
-    fun addBalance(location: Location, change: Float) {
+    private fun addBalance(location: Location, change: Float) {
         val zone = Zone.get(location) ?: return
         zone.markDirtyAndSetMinBalance(change)
     }

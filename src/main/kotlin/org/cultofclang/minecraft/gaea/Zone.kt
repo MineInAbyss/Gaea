@@ -1,11 +1,15 @@
 package org.cultofclang.minecraft.gaea
 
+import com.jeff_media.customblockdata.CustomBlockData
+import com.mineinabyss.blocky.helpers.getGearyEntityFromBlock
 import org.bukkit.Bukkit
 import org.bukkit.Chunk
 import org.bukkit.Location
 import org.bukkit.Material
 import org.bukkit.block.Block
 import org.bukkit.entity.Player
+import org.cultofclang.minecraft.gaea.components.RegenProtection
+import org.cultofclang.minecraft.gaea.listeners.TrackedWorld
 import org.cultofclang.utils.*
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass
@@ -127,8 +131,13 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
 
                 zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
                     val prob = Gaea.settings.getDecayProbability(client.type)
-
                     if (client.type != master.type) {
+
+                        if (client.getGearyEntityFromBlock()?.has<RegenProtection>() == true ||
+                            CustomBlockData(client, Gaea).has(ProtectionKey)
+                        )
+                            return@zipZoneBlocks // Skip blocks that are "under protection"
+
                         changesToBeMade = true
                         val realProb = 1 - (1 - prob).pow(decayPower)
                         if (bool(realProb)) {
