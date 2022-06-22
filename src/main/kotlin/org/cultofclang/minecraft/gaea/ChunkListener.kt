@@ -1,5 +1,6 @@
 package org.cultofclang.minecraft.gaea
 
+import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
 import org.bukkit.Chunk
 import org.bukkit.Location
@@ -20,17 +21,16 @@ object ChunkListener : Listener, Runnable {
 
 
     @EventHandler(priority = EventPriority.HIGHEST)
-    fun onPlayerInteract(event: PlayerInteractEvent) {
-        val p = event.player
+    fun PlayerInteractEvent.onPlayerInteract() {
 
-        if (event.clickedBlock?.type == Material.EMERALD_BLOCK) {
-            p.sendMessage("You found me!")
-            event.isCancelled = true
-            val inv = Bukkit.getServer().createInventory(p, 54, "Void Box")
+        if (clickedBlock?.type == Material.EMERALD_BLOCK) {
+            player.sendMessage("You found me!")
+            isCancelled = true
+            val inv = Bukkit.getServer().createInventory(player, 54, Component.text("Void Box"))
             inv.setItem(0, ItemStack(Material.CLAY_BALL, 500))
             inv.setItem(1, ItemStack(Material.OAK_BOAT))
             inv.setItem(1, ItemStack(Material.DIAMOND_HOE))
-            p.openInventory(inv)
+            player.openInventory(inv)
         }
     }
 
@@ -42,18 +42,17 @@ object ChunkListener : Listener, Runnable {
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
-    fun onBlockPlace(event: BlockBreakEvent) {
-        addBalance(event.block.location, Gaea.settings.decayTimeBlockBreak)
+    fun BlockBreakEvent.onBlockPlace() {
+        addBalance(block.location, Gaea.settings.decayTimeBlockBreak)
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
-    fun onBlockBreak(event: BlockPlaceEvent) {
-        addBalance(event.block.location, Gaea.settings.decayTimeBlockPlace)
+    fun BlockPlaceEvent.onBlockBreak() {
+        addBalance(block.location, Gaea.settings.decayTimeBlockPlace)
     }
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
-    fun onChunkLoad(event: ChunkLoadEvent) {
-        val chunk = event.chunk
+    fun ChunkLoadEvent.onChunkLoad() {
         toProcess.add(chunk)
     }
 
