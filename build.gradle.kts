@@ -1,5 +1,3 @@
-import Com_mineinabyss_conventions_platform_gradle.Deps
-
 plugins {
     id("com.mineinabyss.conventions.kotlin")
     id("com.mineinabyss.conventions.papermc")
@@ -10,10 +8,10 @@ plugins {
 }
 dependencies {
     // MineInAbyss platform
-    compileOnly(Deps.kotlin.stdlib)
-    compileOnly(Deps.kotlinx.serialization.json)
-    compileOnly(Deps.kotlinx.serialization.kaml)
-    compileOnly(Deps.exposed.core) { isTransitive = false }
-    compileOnly(Deps.exposed.dao) { isTransitive = false }
-    compileOnly(Deps.exposed.jdbc) { isTransitive = false }
+    compileOnly(libs.kotlin.stdlib)
+    compileOnly(libs.kotlinx.serialization.json)
+    compileOnly(libs.kotlinx.serialization.kaml)
+    compileOnly(libs.exposed.core) { isTransitive = false }
+    compileOnly(libs.exposed.dao) { isTransitive = false }
+    compileOnly(libs.exposed.jdbc) { isTransitive = false }
 }
