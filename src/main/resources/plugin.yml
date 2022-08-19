@@ -2,8 +2,6 @@ name: Gaea
 version: ${plugin_version}
 api-version: 1.17
 main: org.cultofclang.minecraft.gaea.GaeaPlugin
-depend:
-  - KotlinSpice
 prefix: gaea
 author: LizeLive
 commands:
