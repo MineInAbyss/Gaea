@@ -1,11 +1,14 @@
+
 plugins {
-    id("com.mineinabyss.conventions.kotlin")
-    id("com.mineinabyss.conventions.papermc")
-    id("com.mineinabyss.conventions.copyjar")
-    id("com.mineinabyss.conventions.publication")
-    id("com.mineinabyss.conventions.testing")
-    kotlin("plugin.serialization")
+    alias(libs.plugins.mia.kotlin.jvm)
+    alias(libs.plugins.kotlinx.serialization)
+    alias(libs.plugins.mia.copyjar)
+    alias(libs.plugins.mia.publication)
+    alias(libs.plugins.mia.autoversion)
+    alias(libs.plugins.mia.testing)
+    alias(libs.plugins.mia.papermc)
 }
+
 dependencies {
     // MineInAbyss platform
     compileOnly(libs.kotlin.stdlib)

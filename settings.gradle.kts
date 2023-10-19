@@ -8,12 +8,6 @@ pluginManagement {
         maven("https://repo.papermc.io/repository/maven-public/") //Paper
     }
 
-    plugins {
-        val kotlinVersion: String by settings
-        kotlin("jvm") version kotlinVersion
-        kotlin("plugin.serialization") version kotlinVersion
-    }
-
     val idofrontVersion: String by settings
     resolutionStrategy {
         eachPlugin {
