@@ -17,4 +17,6 @@ dependencies {
     compileOnly(libs.exposed.core) { isTransitive = false }
     compileOnly(libs.exposed.dao) { isTransitive = false }
     compileOnly(libs.exposed.jdbc) { isTransitive = false }
+
+    implementation(libs.bundles.idofront.core)
 }

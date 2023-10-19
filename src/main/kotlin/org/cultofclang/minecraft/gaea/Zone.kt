@@ -30,7 +30,7 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             val x = chunk(location.blockX)
             val y = chunk(location.blockY)
             val z = chunk(location.blockZ)
-            val world = Gaea.getTrackedWorld(location.world ?: return null) ?: return null
+            val world = gaea.plugin.getTrackedWorld(location.world ?: return null) ?: return null
 
             var output: Zone? = null
 
@@ -49,7 +49,7 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             val x = chunk(location.blockX)
             val y = chunk(location.blockY)
             val z = chunk(location.blockZ)
-            val world = Gaea.getTrackedWorld(location.world ?: return null) ?: return null
+            val world = gaea.plugin.getTrackedWorld(location.world ?: return null) ?: return null
 
             lateinit var output: Zone
             transaction(world.database) {
@@ -123,10 +123,10 @@ class Zone(id: EntityID<Long>) : LongEntity(id) {
             val timeMs = measureNanoTime {
                 val masterChunk = zone.world.master.getChunkAt(chunk.x, chunk.z)
 
-                val decayPower = (1 - zone.effectiveBalance / Gaea.settings.timeBetweenDecay).coerceAtLeast(1f)
+                val decayPower = (1 - zone.effectiveBalance / gaea.config.timeBetweenDecay).coerceAtLeast(1f)
 
                 zipZoneBlocks(chunk, masterChunk, zone.y) { client: Block, master: Block ->
-                    val prob = Gaea.settings.getDecayProbability(client.type)
+                    val prob = gaea.config.getDecayProbability(client.type)
 
                     if (client.type != master.type) {
                         changesToBeMade = true

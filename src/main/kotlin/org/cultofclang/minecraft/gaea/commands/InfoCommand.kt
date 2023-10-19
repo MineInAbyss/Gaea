@@ -5,8 +5,8 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 import org.cultofclang.minecraft.gaea.Broker
-import org.cultofclang.minecraft.gaea.Gaea
 import org.cultofclang.minecraft.gaea.Zone
+import org.cultofclang.minecraft.gaea.gaea
 import org.cultofclang.utils.ZONE_SIZE
 import org.cultofclang.utils.durationHuman
 import kotlin.math.ceil
@@ -52,17 +52,17 @@ object InfoCommand : CommandExecutor {
 
 
         if ("c" in bagOfFlags) {
-            val r = Gaea.settings.claimRadius
+            val r = gaea.config.claimRadius
 
             val hs = sender.inventory.itemInMainHand
             val handValue = Broker.value(hs)
 
-            if (handValue < Gaea.settings.claimCost) {
+            if (handValue < gaea.config.claimCost) {
                 sender.sendMessage("$handValue is not enough to claim chunks")
                 return false
             }
 
-            val need = ceil(hs.amount * Gaea.settings.claimCost / handValue).toInt()
+            val need = ceil(hs.amount * gaea.config.claimCost / handValue).toInt()
             hs.amount -= need
 
             sender.sendMessage("paid to claim")
@@ -72,7 +72,7 @@ object InfoCommand : CommandExecutor {
                 for (y in roi)
                     for (z in roi) {
                         Zone.get(location.clone().add(x.toDouble(), y.toDouble(), z.toDouble()))!!
-                            .claim(sender, Gaea.settings.claimTime)
+                            .claim(sender, gaea.config.claimTime)
                     }
 
             // do a claim

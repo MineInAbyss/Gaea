@@ -1,38 +1,18 @@
 package org.cultofclang.minecraft.gaea
 
-import net.kyori.adventure.text.Component
-import org.bukkit.Bukkit
 import org.bukkit.Chunk
 import org.bukkit.Location
-import org.bukkit.Material
 import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockBreakEvent
 import org.bukkit.event.block.BlockPlaceEvent
-import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.event.world.ChunkLoadEvent
-import org.bukkit.inventory.ItemStack
 import org.cultofclang.utils.CHUNK_HEIGHT
 import org.cultofclang.utils.ZONE_SIZE
 import java.util.concurrent.ConcurrentLinkedQueue
 
 object ChunkListener : Listener, Runnable {
-
-
-    @EventHandler(priority = EventPriority.HIGHEST)
-    fun PlayerInteractEvent.onPlayerInteract() {
-
-        if (clickedBlock?.type == Material.EMERALD_BLOCK) {
-            player.sendMessage("You found me!")
-            isCancelled = true
-            val inv = Bukkit.getServer().createInventory(player, 54, Component.text("Void Box"))
-            inv.setItem(0, ItemStack(Material.CLAY_BALL, 500))
-            inv.setItem(1, ItemStack(Material.OAK_BOAT))
-            inv.setItem(1, ItemStack(Material.DIAMOND_HOE))
-            player.openInventory(inv)
-        }
-    }
 
     private var toProcess = ConcurrentLinkedQueue<Chunk>()
 
@@ -43,12 +23,12 @@ object ChunkListener : Listener, Runnable {
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     fun BlockBreakEvent.onBlockPlace() {
-        addBalance(block.location, Gaea.settings.decayTimeBlockBreak)
+        addBalance(block.location, gaea.config.decayTimeBlockBreak)
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     fun BlockPlaceEvent.onBlockBreak() {
-        addBalance(block.location, Gaea.settings.decayTimeBlockPlace)
+        addBalance(block.location, gaea.config.decayTimeBlockPlace)
     }
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
@@ -58,7 +38,7 @@ object ChunkListener : Listener, Runnable {
 
     override fun run() {
         var done = 0
-        while (done < Gaea.settings.maxDecayPerTick) {
+        while (done < gaea.config.maxDecayPerTick) {
             val chunk = toProcess.poll() ?: return
             if (!chunk.isLoaded)
                 continue
